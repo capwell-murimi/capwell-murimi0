@@ -7,21 +7,19 @@ author_profile: true
 ---
 
 <style>
-.projects-container {
-  display: flex;
-  flex-wrap: wrap;
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 2em;
-  justify-content: flex-start;
+  margin: 2em 0;
 }
 .project-card {
   background: #181818;
   color: #f2f2f2;
   border-radius: 18px;
   box-shadow: 0 2px 12px #222;
-  width: 350px;
   overflow: hidden;
   transition: transform 0.25s cubic-bezier(.4,2,.6,.8), box-shadow 0.25s;
-  margin-bottom: 1.8em;
   display: flex;
   flex-direction: column;
 }
@@ -65,14 +63,13 @@ author_profile: true
   color: #181818;
 }
 @media (max-width: 800px) {
-  .projects-container { flex-direction: column; align-items: center; }
-  .project-card { width: 98vw; }
+  .projects-grid { grid-template-columns: 1fr; }
 }
 </style>
 
 Browse through my projects below.
 
-<div class="projects-container">
+<div class="projects-grid">
 
 <div class="project-card">
   <img class="project-preview" src="https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Data Scraping Project preview" />
