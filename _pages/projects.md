@@ -56,7 +56,7 @@ Browse through my projects below.
 </style>
 
 <div class="project-card">
-  <img class="project-preview" src="https://unsplash.com/photos/geometric-shape-digital-wallpaper-oyXis2kALVg" alt="Geometric shape digital wallpaper">
+  <img class="project-preview" src="[https://unsplash.com/photos/geometric-shape-digital-wallpaper-oyXis2kALVg" alt="Geometric shape digital wallpaper](https://unsplash.com/photos/geometric-shape-digital-wallpaper-oyXis2kALVg)">
   <div class="project-info">
     <p class="project-title">Data Scraping Project</p>
     <p>My first project involved scraping data from a single web page.</p>
