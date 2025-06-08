@@ -56,7 +56,7 @@ Browse through my projects below.
 </style>
 
 <div class="project-card">
-  <img class="project-preview" src="[https://placehold.co/120x80?text=Scraping](https://plus.unsplash.com/premium_photo-1672860301290-3f978aaafbb4?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGRhdGElMjBzY3JhcGluZ3xlbnwwfHwwfHx8MA%3D%3D)" alt="Data Scraping Preview">
+  <img class="project-preview" src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=80" alt="Geometric shape digital wallpaper">
   <div class="project-info">
     <p class="project-title">Data Scraping Project</p>
     <p>My first project involved scraping data from a single web page.</p>
@@ -66,7 +66,7 @@ Browse through my projects below.
 </div>
 
 <div class="project-card">
-  <img class="project-preview" src="[https://placehold.co/120x80?text=Wrangling](https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)" alt="Data Wrangling Preview">
+  <img class="project-preview" src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" alt="White and black concrete building during night time">
   <div class="project-info">
     <p class="project-title">Data Wrangling Project</p>
     <p>My second project focused on cleaning and transforming data using Python.</p>
