@@ -13,6 +13,16 @@ author_profile: true
   gap: 2em;
   margin: 2em 0;
 }
+@media (max-width: 900px) {
+  .projects-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 600px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
 .project-card {
   background: #181818;
   color: #f2f2f2;
@@ -61,9 +71,6 @@ author_profile: true
 .project-link:hover {
   background: #00e8c4;
   color: #181818;
-}
-@media (max-width: 800px) {
-  .projects-grid { grid-template-columns: 1fr; }
 }
 </style>
 
