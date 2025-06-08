@@ -1,54 +1,230 @@
 ---
-# You don't need to edit this file, it's empty on purpose.
-# Edit theme's home layout instead if you wanna make some changes
-# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-layout: home
-author_profile: true # Uses your author info from _config.yml
-
-# Hero Section
-header:
-  overlay_image: /assets/images/placeholder-hero.jpg # Replace with your hero image path
-  overlay_filter: "0.5" # Adjust darkness (0.0 to 1.0)
-  actions:
-    - label: "View My Projects"
-      url: "/projects/"
-    - label: "Get In Touch"
-      url: "/contact/"
-
-# Feature Row for Skills/Services
-feature_row:
-  - image_path: /assets/images/placeholder-skill1.png # Replace with skill icon/image
-    alt: "Data Analysis"
-    title: "Data Analysis & Visualization"
-    excerpt: "Turning complex data into clear, actionable insights using modern tools and techniques."
-    url: "/projects/#data-analysis" # Optional: Link to a specific project or section
-    btn_label: "Learn More"
-    btn_class: "btn--info"
-  - image_path: /assets/images/placeholder-skill2.png # Replace with skill icon/image
-    alt: "Data Engineering"
-    title: "Data Engineering"
-    excerpt: "Building robust and scalable data pipelines to ensure data quality and accessibility."
-    url: "/projects/#data-engineering" # Optional
-    btn_label: "Learn More"
-    btn_class: "btn--info"
-  - image_path: /assets/images/placeholder-skill3.png # Replace with skill icon/image
-    alt: "Machine Learning"
-    title: "Machine Learning"
-    excerpt: "Developing predictive models to solve business problems and drive innovation."
-    url: "/projects/#machine-learning" # Optional
-    btn_label: "Learn More"
-    btn_class: "btn--info"
+layout: none
+title: "Home"
 ---
 
-<h2>Welcome to My Portfolio</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Capwell Murimi | Data Professional</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      background: #121212;
+      color: #f4f4f4;
+      font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .hero {
+      text-align: center;
+      padding: 3.5em 1em 2em 1em;
+      background: linear-gradient(120deg, #232526 0%, #314755 80%);
+    }
+    .hero-img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #36a7ff;
+      margin-bottom: 1em;
+      box-shadow: 0 2px 18px #111a;
+      background: #232526;
+    }
+    .hero-title {
+      font-size: 2.5em;
+      color: #36a7ff;
+      margin: 0.15em 0 0.13em 0;
+      font-weight: bold;
+      letter-spacing: 0.02em;
+    }
+    .hero-desc {
+      font-size: 1.23em;
+      color: #e0e0e0;
+      max-width: 600px;
+      margin: 0 auto 1.2em auto;
+      line-height: 1.65;
+    }
+    .hero-icons {
+      font-size: 1.3em;
+      color: #00e8c4;
+      margin: 0.7em 0 0.5em 0;
+      letter-spacing: 0.17em;
+    }
 
-<p>
-  I'm <strong>Capwell Murimi</strong>, a passionate data professional specializing in extracting meaningful insights from data.
-</p>
+    #hashnode-section {
+      margin: 3.2em 0 2.5em 0;
+    }
+    #hashnode-section h2 {
+      text-align: center;
+      color: #36a7ff;
+      font-size: 2em;
+      font-weight: bold;
+      letter-spacing: 0.02em;
+      margin-bottom: 1.2em;
+    }
+    #hashnode-articles {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+      gap: 2.2em;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2vw;
+    }
+    .hashnode-card {
+      background: #181818;
+      color: #f2f2f2;
+      border-radius: 18px;
+      box-shadow: 0 2px 18px #222;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.22s cubic-bezier(.4,2,.6,.8), box-shadow 0.22s;
+    }
+    .hashnode-card:hover {
+      transform: scale(1.045) rotate(-1deg);
+      box-shadow: 0 8px 28px #0af6ff44;
+    }
+    .hashnode-img {
+      width: 100%;
+      height: 185px;
+      object-fit: cover;
+      border-bottom: 2px solid #36a7ff;
+      transition: filter 0.2s;
+    }
+    .hashnode-card:hover .hashnode-img {
+      filter: brightness(1.12) contrast(1.1) saturate(1.1);
+    }
+    .hashnode-info {
+      padding: 1.2em 1.4em 1.4em 1.4em;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .hashnode-title {
+      font-size: 1.15em;
+      font-weight: bold;
+      color: #36a7ff;
+      margin-bottom: 0.3em;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .hashnode-title:hover {
+      color: #00e8c4;
+      text-decoration: underline;
+    }
+    .hashnode-date {
+      font-size: 0.97em;
+      color: #b0e0ff;
+      margin-bottom: 0.8em;
+    }
+    .hashnode-desc {
+      font-size: 1em;
+      color: #e0e0e0;
+      margin-bottom: 1em;
+    }
 
-<p>
-  Check out my <a href="/projects">projects</a> to see my work in action, or visit the <a href="/about">about me</a> page to learn more.
-</p>
+    @media (max-width: 900px) {
+      #hashnode-articles {
+        grid-template-columns: 1fr 1fr;
+        max-width: 98vw;
+        padding: 0 1vw;
+      }
+    }
+    @media (max-width: 600px) {
+      #hashnode-articles {
+        grid-template-columns: 1fr;
+        max-width: 99vw;
+        padding: 0 1vw;
+      }
+      .hero-title {
+        font-size: 1.6em;
+      }
+      .hero-desc {
+        font-size: 1em;
+      }
+    }
+  </style>
+</head>
+<body>
 
-<!-- You can add more content here, like a brief intro to your latest blog posts or specific achievements -->
+  <div class="hero">
+    <img class="hero-img" src="https://avatars.githubusercontent.com/u/113608027?v=4" alt="Capwell Murimi profile photo" />
+    <div class="hero-title">Capwell Murimi</div>
+    <div class="hero-icons" title="Data Engineering, Data Analysis, ETL, Learning, Innovation">
+      🛠️ 📊 🔄 📚 💡
+    </div>
+    <div class="hero-desc">
+      Data professional passionate about transforming raw data into actionable insights.<br>
+      Specializing in <b>data engineering</b>, <b>data analysis</b>, and scalable architectures.
+    </div>
+  </div>
+
+  <section id="hashnode-section">
+    <h2>Latest Articles from Hashnode</h2>
+    <div id="hashnode-articles">
+      <p style="grid-column: 1/-1; text-align:center;">Loading latest articles…</p>
+    </div>
+  </section>
+
+  <script>
+    const HASHNODE_USERNAME = "capwell"; // Change if your Hashnode username is different
+
+    async function fetchHashnodeArticles(username) {
+      const query = `
+        query {
+          publication(host: "${username}.hashnode.dev") {
+            posts(first: 8) {
+              edges {
+                node {
+                  title
+                  brief
+                  slug
+                  publishedAt
+                  coverImage { url }
+                }
+              }
+            }
+          }
+        }
+      `;
+      const res = await fetch("https://gql.hashnode.com/", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ query })
+      });
+      const data = await res.json();
+      if (!data.data || !data.data.publication || !data.data.publication.posts) return [];
+      return data.data.publication.posts.edges.map(e => e.node);
+    }
+
+    function renderHashnodeArticles(posts) {
+      const container = document.getElementById("hashnode-articles");
+      if (!posts.length) {
+        container.innerHTML = "<p style='grid-column: 1/-1; text-align:center;'>No articles found.</p>";
+        return;
+      }
+      container.innerHTML = posts.map(post => `
+        <div class="hashnode-card">
+          ${post.coverImage && post.coverImage.url ? `<img class="hashnode-img" src="${post.coverImage.url}" alt="Article cover">` : ""}
+          <div class="hashnode-info">
+            <a href="https://${HASHNODE_USERNAME}.hashnode.dev/${post.slug}" class="hashnode-title" target="_blank">${post.title}</a>
+            <div class="hashnode-date">${new Date(post.publishedAt).toLocaleDateString()}</div>
+            <div class="hashnode-desc">${post.brief}</div>
+          </div>
+        </div>
+      `).join("");
+    }
+
+    fetchHashnodeArticles(HASHNODE_USERNAME)
+      .then(renderHashnodeArticles)
+      .catch(() => {
+        document.getElementById("hashnode-articles").innerHTML = "<p style='grid-column: 1/-1; text-align:center;'>Couldn't load articles from Hashnode.</p>";
+      });
+  </script>
+
+</body>
+</html>
 
