@@ -101,4 +101,14 @@ Browse through my projects below.
   </div>
 </div>
 
+<div class="project-card">
+  <img class="project-preview" src="https://plus.unsplash.com/premium_photo-1661443598082-afd740d6d07c?q=80&w=1978&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Power BI Hotel Dashboard Project preview" />
+  <div class="project-info">
+    <p class="project-title">Power BI Hotel Dashboard</p>
+    <p>Designed an interactive Business Intelligence dashboard for hotel management, delivering real-time insights on occupancy, revenue, and guest trends. Empowered hotel managers to make data-driven decisions with engaging visual analytics.</p>
+    <p><strong>Technologies:</strong> Power BI</p>
+    <a class="project-link" href="https://github.com/capwell-murimi/powerbi-hotel-dashboard" target="_blank">View Code</a>
+  </div>
+</div>
+
 </div>
