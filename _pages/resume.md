@@ -1,93 +1,153 @@
 ---
 layout: single
 permalink: /resume/
-title: Resume
+title: 🚀 Capwell Murimi — Resume
 author_profile: true
 ---
 
-# PROFILE
-Detail-oriented IT professional with 1 year of practical experience and demonstrated data science capabilities through personal projects. Combines hands-on technical skills with strong analytical abilities developed through self-directed learning in machine learning and data analysis. Proficient in transforming raw data into actionable insights.
+<style>
+/* Creative Resume Styling */
+.resume-section {
+  background: #f9fafc; border-radius: 16px; padding: 2em 1.5em; margin-bottom: 2em; box-shadow: 0 2px 8px #d7e8f7;
+}
+.resume-title {
+  font-size: 2em;
+  color: #2374ab;
+  text-shadow: 0 1px 1px #e3f1fb;
+  margin-bottom: 0.5em;
+}
+.timeline {
+  border-left: 3px solid #2374ab;
+  margin-left: 1.2em;
+  padding-left: 1.2em;
+}
+.timeline-entry {
+  margin-bottom: 1.2em;
+  position: relative;
+}
+.timeline-entry:before {
+  content: "•";
+  color: #2374ab;
+  font-size: 1.5em;
+  position: absolute;
+  left: -1.2em;
+  top: -0.1em;
+}
+.badge {
+  display: inline-block;
+  background: #2374ab;
+  color: #fff;
+  border-radius: 8px;
+  padding: 0.2em 0.7em;
+  font-size: 0.95em;
+  margin-right: 0.5em;
+}
+.skill-bar {
+  background: #e3f1fb;
+  border-radius: 8px;
+  height: 1.2em;
+  margin-bottom: 0.6em;
+  width: 100%;
+  position: relative;
+}
+.skill-level {
+  background: #2374ab;
+  height: 100%;
+  border-radius: 8px;
+  text-align: right;
+  color: #fff;
+  padding-right: 0.4em;
+  font-size: 0.9em;
+  line-height: 1.2em;
+}
+</style>
 
----
+<div class="resume-section">
 
-## WORK HISTORY
+<div class="resume-title">👤 Profile</div>
+Detail-oriented IT professional with 1 year of practical experience and demonstrated data science capabilities through personal projects. Combines hands-on technical skills with strong analytical and communication abilities. Skilled in email security, data science, and empowering communities through technology.
 
-**IT INTERN**  
-Usercare Limited – Nairobi, WestLands  
-_May 2024 – Aug 2024_
+</div>
 
-- Managed email security, ensuring domain protection by implementing and maintaining DMARC, SPF, DKIM, BIMI, MTA-STS, and TLS-RPT. Analyzed email traffic to identify threats and generated visualized reports to track security performance.
-- Learned about Huawei’s Data Storage Solutions (Usercare as a partner company) and worked toward obtaining Huawei certifications.
-- Earned the HCSA Presales Storage Certification, demonstrating expertise in Huawei storage solutions.
-- Conducted training for the Communication Authority of Kenya (CAK) on DMARC implementation and best practices for email security.
+<div class="resume-section">
+<div class="resume-title">💼 Work History</div>
+<div class="timeline">
+  <div class="timeline-entry">
+    <span class="badge">IT INTERN</span> <br>
+    Usercare Limited – Nairobi, WestLands <br>
+    <i>May 2024 – Aug 2024</i>
+    <ul>
+      <li>Managed email security: DMARC, SPF, DKIM, BIMI, MTA-STS, TLS-RPT.</li>
+      <li>Analyzed email traffic for threats, visualized metrics for reporting.</li>
+      <li>Studied Huawei Data Storage Solutions; achieved HCSA Presales Storage Certification.</li>
+      <li>Trained the Communication Authority of Kenya (CAK) on DMARC best practices.</li>
+    </ul>
+  </div>
+  <div class="timeline-entry">
+    <span class="badge">GDSC CO–LEAD VOLUNTEER</span> <br>
+    Co-operative University – Nairobi, Karen <br>
+    <i>Jun 2017 – Aug 2019</i>
+    <ul>
+      <li>Organized tech-focused events: Data Science, web & mobile development.</li>
+      <li>Grew community through data-driven workshops and feedback analysis.</li>
+      <li>Earned a professional badge for project execution and community growth.</li>
+    </ul>
+  </div>
+</div>
+</div>
 
-**GDSC CO–LEAD VOLUNTEER**  
-Co-operative University – Nairobi, Karen  
-_Jun 2017 – Aug 2019_
+<div class="resume-section">
+<div class="resume-title">🎓 Certifications</div>
+<ul>
+  <li><span class="badge">React</span> Andela Learning React Program <i>(Oct 2023)</i> [<a href="https://credsverse.com/credentials/1f35953b-ecbe-4b72-897c-09b1e7ddba48" target="_blank">See Credential</a>]</li>
+  <li><span class="badge">Azure AI</span> Responsible AI Workshop <i>(Mar 2024)</i> [<a href="https://www.credly.com/badges/1ad262e4-49a4-42db-8298-3a926ddda6ed" target="_blank">See Credential</a>]</li>
+  <li><span class="badge">Global AI Bootcamp</span> Nairobi Attendee <i>(2025)</i> [<a href="https://globalai.community/badges/1f45d84a-b58f-414b-9289-413900bd6476/" target="_blank">See Credential</a>]</li>
+  <li><span class="badge">Huawei</span> HCSA Presales Storage Certification <i>(Aug 2024)</i></li>
+  <li><span class="badge">Huawei</span> HCSA Sales Storage Certification <i>(Oct 2024)</i></li>
+</ul>
+</div>
 
-- Organized and led tech-focused events, specializing in Data Science, web and mobile app development, while tracking participant engagement metrics to optimize future sessions.
-- Built and nurtured a tech community by planning data-informed workshops and analyzing feedback to improve learning outcomes for student-led initiatives.
-- Earned a professional badge by demonstrating expertise in project execution and community growth strategies.
+<div class="resume-section">
+<div class="resume-title">🏫 Education</div>
+<ul>
+  <li><b>CYBER SHUJAA</b> — Data Science and AI <i>(May 2025 - Recent)</i></li>
+  <li><b>The Cooperative University of Kenya</b> — Bachelor of Business Information Technology <i>(Oct 2021 - May 2025)</i></li>
+</ul>
+</div>
 
----
+<div class="resume-section">
+<div class="resume-title">🛠️ Technical Skills</div>
+<div class="skill-bar"><div class="skill-level" style="width: 95%;">Python & SQL</div></div>
+<div class="skill-bar"><div class="skill-level" style="width: 90%;">Machine Learning / AI</div></div>
+<div class="skill-bar"><div class="skill-level" style="width: 85%;">Statistical Modeling</div></div>
+<div class="skill-bar"><div class="skill-level" style="width: 85%;">TensorFlow / PyTorch</div></div>
+<div class="skill-bar"><div class="skill-level" style="width: 80%;">Scikit-learn</div></div>
+<div class="skill-bar"><div class="skill-level" style="width: 80%;">Power BI</div></div>
+<div class="skill-bar"><div class="skill-level" style="width: 75%;">Git</div></div>
+</div>
 
-## CERTIFICATIONS
+<div class="resume-section">
+<div class="resume-title">🤝 Soft Skills</div>
+<ul>
+  <li>Data Storytelling</li>
+  <li>Problem-Solving & Critical Thinking</li>
+  <li>Attention to Detail</li>
+  <li>Collaboration & Teamwork</li>
+  <li>Time Management</li>
+  <li>Business Acumen</li>
+</ul>
+</div>
 
-- Andela Learning React Program (October 2023)  
-  [Credential](https://credsverse.com/credentials/1f35953b-ecbe-4b72-897c-09b1e7ddba48)
+<div class="resume-section">
+<div class="resume-title">🌍 Languages</div>
+<ul>
+  <li>English</li>
+  <li>Kiswahili</li>
+  <li>German</li>
+</ul>
+</div>
 
-- Azure Responsible AI Workshop - Completion (March 2024)  
-  [Credential](https://www.credly.com/badges/1ad262e4-49a4-42db-8298-3a926ddda6ed)
-
-- Global AI Bootcamp 2025 - Nairobi – Attendee  
-  [Credential](https://globalai.community/badges/1f45d84a-b58f-414b-9289-413900bd6476/)
-
-- HCSA Presales Storage Certification (August 2024)
-- HCSA Sales Storage Certification (October 2024)
-
----
-
-## EDUCATION
-
-**CYBER SHUJAA**  
-Data Science and Artificial Intelligence _(May 2025 - Recent)_
-
-**THE COOPERATIVE UNIVERSITY OF KENYA – Nairobi, Karen**  
-Bachelor Of Business Information Technology _(October 2021 - May 2025)_
-
----
-
-## TECHNICAL SKILLS
-
-- Python and SQL
-- Machine Learning & Artificial Intelligence
-- Statistical Modeling
-- TensorFlow / PyTorch
-- Scikit-learn
-- Power BI
-- Git
-
----
-
-## SOFT SKILLS
-
-- Data Storytelling
-- Problem-Solving & Critical Thinking
-- Attention to Detail
-- Collaboration & Teamwork
-- Time Management
-- Business Acumen
-
----
-
-## LANGUAGES
-
-- English
-- Kiswahili
-- German
-
----
-
-## REFEREES
-
+<div class="resume-section">
+<div class="resume-title">📞 Referees</div>
 Available upon request
+</div>
