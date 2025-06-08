@@ -125,13 +125,12 @@ Detail-oriented IT professional with 1 year of practical experience and demonstr
 
 <div class="resume-section">
 <div class="resume-title">🛠️ Technical Skills</div>
-<div class="skill-bar"><div class="skill-level" style="width: 95%;">Python & SQL</div></div>
-<div class="skill-bar"><div class="skill-level" style="width: 90%;">Machine Learning / AI</div></div>
-<div class="skill-bar"><div class="skill-level" style="width: 85%;">Statistical Modeling</div></div>
-<div class="skill-bar"><div class="skill-level" style="width: 85%;">TensorFlow / PyTorch</div></div>
-<div class="skill-bar"><div class="skill-level" style="width: 80%;">Scikit-learn</div></div>
-<div class="skill-bar"><div class="skill-level" style="width: 80%;">Power BI</div></div>
-<div class="skill-bar"><div class="skill-level" style="width: 75%;">Git</div></div>
+<div class="skill-bar"><div class="skill-level" style="width: 98%;">Python &amp; SQL</div></div>
+<div class="skill-bar"><div class="skill-level" style="width: 90%;">Git</div></div>
+<div class="skill-bar"><div class="skill-level" style="width: 85%;">Power BI</div></div>
+<div class="skill-bar"><div class="skill-level" style="width: 80%;">Statistical Modeling / Scikit-learn</div></div>
+<div class="skill-bar"><div class="skill-level" style="width: 75%;">Machine Learning &amp; AI</div></div>
+<div class="skill-bar"><div class="skill-level" style="width: 70%;">TensorFlow / PyTorch</div></div>
 </div>
 
 <div class="resume-section">
