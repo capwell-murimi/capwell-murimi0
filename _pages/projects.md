@@ -127,5 +127,16 @@ Browse through my projects below.
     <p class="project-title">Power BI Hotel Dashboard</p>
     <p>Designed an interactive Business Intelligence dashboard for hotel management, delivering real-time insights on occupancy, revenue, and guest trends. Empowered hotel managers to make data-driven decisions with engaging visual analytics.</p>
     <p><strong>Technologies:</strong> Power BI</p>
-    <a class="project-link" href*
-
+     <a class="project-link" href="https://github.com/capwell-murimi/kai-karo-vehicle-scraper" target="_blank">View Code</a>
+  </div>
+</div>
+
+<div class="project-card">
+  <img class="project-preview" src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=1974&auto=format&fit=crop" alt="Kai and Karo Scraper Project preview" />
+  <div class="project-info">
+    <p class="project-title">Kai & Karo Vehicle Scraper</p>
+    <p>Scraped all vehicles listed on the Kai and Karo website, extracting price, make, year, and transmission mode (automatic/manual) for each vehicle. Learned to automate scraping across multiple pages for comprehensive data collection and market analysis.</p>
+    <p><strong>Technologies:</strong> Python, Beautiful Soup, Requests, Pandas</p>
+    <a class="project-link" href="https://github.com/capwell-murimi/kai-karo-vehicle-scraper" target="_blank">View Code</a>
+  </div>
+</div>
