@@ -107,4 +107,6 @@ defaults:
     values:
       layout: single
       author_profile: true
-
+      
+exclude:
+  - _posts
