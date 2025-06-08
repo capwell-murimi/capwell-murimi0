@@ -66,7 +66,7 @@ Browse through my projects below.
 </div>
 
 <div class="project-card">
-  <img class="project-preview" src="https://unsplash.com/photos/white-and-black-concrete-building-during-night-time-lI7dlA5VBp8" alt="White and black concrete building during night time">
+  <img class="project-preview" src="https://images.unsplash.com/photo-1621955964441-c173e01c135b?q=80&w=2086&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Data Wrangling Preview">
   <div class="project-info">
     <p class="project-title">Data Wrangling Project</p>
     <p>My second project focused on cleaning and transforming data using Python.</p>
