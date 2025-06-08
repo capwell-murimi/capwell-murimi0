@@ -29,11 +29,11 @@ Browse through my projects below.
 </div>
 
 <div class="project-card">
-  <img class="project-preview" src="https://placehold.co/120x80?text=EDA" alt="EDA Preview">
+  <img class="project-preview" src="https://plus.unsplash.com/premium_photo-1720091339077-d0f56397a0c9?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Exploratory Data Analysis Preview">
   <div class="project-info">
-    <p class="project-title">Exploratory Data Analysis (EDA) Project</p>
-    <p>My third project was performing exploratory data analysis using Python.</p>
-    <p><strong>Technologies:</strong> Python</p>
-    <a class="project-link" href="https://github.com/yourusername/eda-project" target="_blank">View Code</a>
+    <p class="project-title">Exploratory Data Analysis Project</p>
+    <p>In this project, I performed in-depth exploratory data analysis to uncover patterns and insights from complex datasets.</p>
+    <p><strong>Technologies:</strong> Pandas, Matplotlib, Seaborn</p>
+    <a class="project-link" href="https://github.com/capwell-murimi/eda-project" target="_blank">View Code</a>
   </div>
 </div>
