@@ -12,26 +12,8 @@ author_profile: true
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 2em;
   margin: 2em 0;
-}
-@media (min-width: 1200px) {
-  .projects-grid {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-@media (min-width: 900px) and (max-width: 1199px) {
-  .projects-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-@media (min-width: 600px) and (max-width: 899px) {
-  .projects-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media (max-width: 599px) {
-  .projects-grid {
-    grid-template-columns: 1fr;
-  }
+  width: 100%;
+  max-width: 100vw;
 }
 .project-card {
   background: #181818;
