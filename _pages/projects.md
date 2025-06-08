@@ -128,4 +128,14 @@ Browse through my projects below.
   </div>
 </div>
 
+<div class="project-card">
+  <img class="project-preview" src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?q=80&w=1966&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Kai and Karo Scraper Project preview" />
+  <div class="project-info">
+    <p class="project-title">Kai & Karo Vehicle Scraper</p>
+    <p>Scraped all vehicles listed on the Kai and Karo website, extracting price, make, year, and transmission mode (automatic/manual) for each vehicle. Learned to automate scraping across multiple pages for comprehensive data collection and market analysis.</p>
+    <p><strong>Technologies:</strong> Python, Beautiful Soup, Requests, Pandas</p>
+    <a class="project-link" href="https://github.com/capwell-murimi/kai-karo-vehicle-scraper" target="_blank">View Code</a>
+  </div>
+</div>
+
 </div>
