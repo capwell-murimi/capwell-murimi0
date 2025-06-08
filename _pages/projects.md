@@ -56,22 +56,22 @@ Browse through my projects below.
 </style>
 
 <div class="project-card">
-  <img class="project-preview" src="https://placehold.co/120x80?text=Scraping](https://plus.unsplash.com/premium_photo-1672860301290-3f978aaafbb4?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGRhdGElMjBzY3JhcGluZ3xlbnwwfHwwfHx8MA%3D%3D" alt="Data Scraping Preview">
+  <img class="project-preview" src="[https://placehold.co/120x80?text=Scraping](https://plus.unsplash.com/premium_photo-1672860301290-3f978aaafbb4?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGRhdGElMjBzY3JhcGluZ3xlbnwwfHwwfHx8MA%3D%3D)" alt="Data Scraping Preview">
   <div class="project-info">
     <p class="project-title">Data Scraping Project</p>
     <p>My first project involved scraping data from a single web page.</p>
     <p><strong>Technologies:</strong> Beautiful Soup, Requests, Pandas</p>
-    <a class="project-link" href="https://github.com/yourusername/data-scraping-project" target="_blank">View Code</a>
+    <a class="project-link" href="https://github.com/capwell-murimi/data-scraping-project" target="_blank">View Code</a>
   </div>
 </div>
 
 <div class="project-card">
-  <img class="project-preview" src="https://placehold.co/120x80?text=Wrangling" alt="Data Wrangling Preview](https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+  <img class="project-preview" src="[https://placehold.co/120x80?text=Wrangling](https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)" alt="Data Wrangling Preview">
   <div class="project-info">
     <p class="project-title">Data Wrangling Project</p>
     <p>My second project focused on cleaning and transforming data using Python.</p>
     <p><strong>Technologies:</strong> Python</p>
-    <a class="project-link" href="https://github.com/yourusername/data-wrangling-project" target="_blank">View Code</a>
+    <a class="project-link" href="https://github.com/capwell-murimi/data-wrangling-project" target="_blank">View Code</a>
   </div>
 </div>
 
