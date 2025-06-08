@@ -1,6 +1,6 @@
 ---
-title: "Posts by Category"
-layout: categories
-permalink: /categories/
+title: "Resume Outline"
+layout: resume
+permalink: /resume/
 author_profile: true
 ---
