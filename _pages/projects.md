@@ -56,7 +56,7 @@ Browse through my projects below.
 </style>
 
 <div class="project-card">
-  <img class="project-preview" src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=80" alt="Geometric shape digital wallpaper">
+  <img class="project-preview" src="https://unsplash.com/photos/geometric-shape-digital-wallpaper-oyXis2kALVg" alt="Geometric shape digital wallpaper">
   <div class="project-info">
     <p class="project-title">Data Scraping Project</p>
     <p>My first project involved scraping data from a single web page.</p>
@@ -66,7 +66,7 @@ Browse through my projects below.
 </div>
 
 <div class="project-card">
-  <img class="project-preview" src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" alt="White and black concrete building during night time">
+  <img class="project-preview" src="https://unsplash.com/photos/white-and-black-concrete-building-during-night-time-lI7dlA5VBp8" alt="White and black concrete building during night time">
   <div class="project-info">
     <p class="project-title">Data Wrangling Project</p>
     <p>My second project focused on cleaning and transforming data using Python.</p>
