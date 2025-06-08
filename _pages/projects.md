@@ -7,32 +7,16 @@ author_profile: true
 ---
 
 <style>
+/* Responsive, centered grid with spacious cards */
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
   gap: 2em;
-  margin: 2em 0;
+  margin: 2em auto;
+  max-width: 1250px;
+  padding: 0 2vw;
 }
-@media (min-width: 1200px) {
-  .projects-grid {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-@media (min-width: 900px) and (max-width: 1199px) {
-  .projects-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-@media (min-width: 600px) and (max-width: 899px) {
-  .projects-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media (max-width: 599px) {
-  .projects-grid {
-    grid-template-columns: 1fr;
-  }
-}
+
 .project-card {
   background: #181818;
   color: #f2f2f2;
@@ -42,6 +26,7 @@ author_profile: true
   transition: transform 0.25s cubic-bezier(.4,2,.6,.8), box-shadow 0.25s;
   display: flex;
   flex-direction: column;
+  min-width: 0;
 }
 .project-card:hover {
   transform: scale(1.045) rotate(-1deg);
@@ -60,6 +45,9 @@ author_profile: true
 .project-info {
   padding: 1.2em 1.4em 1.4em 1.4em;
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .project-title {
   font-size: 1.25em;
@@ -81,6 +69,21 @@ author_profile: true
 .project-link:hover {
   background: #00e8c4;
   color: #181818;
+}
+
+@media (max-width: 900px) {
+  .projects-grid {
+    grid-template-columns: 1fr 1fr;
+    max-width: 98vw;
+    padding: 0 1vw;
+  }
+}
+@media (max-width: 600px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+    max-width: 98vw;
+    padding: 0 1vw;
+  }
 }
 </style>
 
@@ -124,18 +127,5 @@ Browse through my projects below.
     <p class="project-title">Power BI Hotel Dashboard</p>
     <p>Designed an interactive Business Intelligence dashboard for hotel management, delivering real-time insights on occupancy, revenue, and guest trends. Empowered hotel managers to make data-driven decisions with engaging visual analytics.</p>
     <p><strong>Technologies:</strong> Power BI</p>
-    <a class="project-link" href="https://github.com/capwell-murimi/powerbi-hotel-dashboard" target="_blank">View Code</a>
-  </div>
-</div>
-
-<div class="project-card">
-  <img class="project-preview" src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?q=80&w=1966&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Kai and Karo Scraper Project preview" />
-  <div class="project-info">
-    <p class="project-title">Kai & Karo Vehicle Scraper</p>
-    <p>Scraped all vehicles listed on the Kai and Karo website, extracting price, make, year, and transmission mode (automatic/manual) for each vehicle. Learned to automate scraping across multiple pages for comprehensive data collection and market analysis.</p>
-    <p><strong>Technologies:</strong> Python, Beautiful Soup, Requests, Pandas</p>
-    <a class="project-link" href="https://github.com/capwell-murimi/kai-karo-vehicle-scraper" target="_blank">View Code</a>
-  </div>
-</div>
-
-</div>
+    <a class="project-link" href*
+
