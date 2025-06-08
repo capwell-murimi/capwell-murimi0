@@ -3,5 +3,48 @@
 # Edit theme's home layout instead if you wanna make some changes
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: home
-author_profile: true
+author_profile: true # Uses your author info from _config.yml
+
+# Hero Section
+header:
+  overlay_image: /assets/images/placeholder-hero.jpg # Replace with your hero image path
+  overlay_filter: "0.5" # Adjust darkness (0.0 to 1.0)
+  actions:
+    - label: "View My Projects"
+      url: "/projects/"
+    - label: "Get In Touch"
+      url: "/contact/"
+
+# Feature Row for Skills/Services
+feature_row:
+  - image_path: /assets/images/placeholder-skill1.png # Replace with skill icon/image
+    alt: "Data Analysis"
+    title: "Data Analysis & Visualization"
+    excerpt: "Turning complex data into clear, actionable insights using modern tools and techniques."
+    url: "/projects/#data-analysis" # Optional: Link to a specific project or section
+    btn_label: "Learn More"
+    btn_class: "btn--info"
+  - image_path: /assets/images/placeholder-skill2.png # Replace with skill icon/image
+    alt: "Data Engineering"
+    title: "Data Engineering"
+    excerpt: "Building robust and scalable data pipelines to ensure data quality and accessibility."
+    url: "/projects/#data-engineering" # Optional
+    btn_label: "Learn More"
+    btn_class: "btn--info"
+  - image_path: /assets/images/placeholder-skill3.png # Replace with skill icon/image
+    alt: "Machine Learning"
+    title: "Machine Learning"
+    excerpt: "Developing predictive models to solve business problems and drive innovation."
+    url: "/projects/#machine-learning" # Optional
+    btn_label: "Learn More"
+    btn_class: "btn--info"
 ---
+
+## Welcome to My Portfolio
+
+I'm **{{ site.author.name }}**, a {{ site.author.bio | downcase | replace: "my awesome biography constrained to a sentence or two goes here.", "passionate data professional specializing in extracting meaningful insights from data" }}.
+
+Explore my [projects](/projects/) to see my work in action, or learn more [about me](/about/).
+
+<!-- You can add more content here, like a brief intro to your latest blog posts or specific achievements -->
+
