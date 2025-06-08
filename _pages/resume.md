@@ -6,18 +6,23 @@ author_profile: true
 ---
 
 <style>
-/* Creative Resume Styling */
+/* Creative Resume Styling with Black Card Backgrounds */
 .resume-section {
-  background: #f9fafc; border-radius: 16px; padding: 2em 1.5em; margin-bottom: 2em; box-shadow: 0 2px 8px #d7e8f7;
+  background: #181818; /* Black background */
+  border-radius: 16px;
+  padding: 2em 1.5em;
+  margin-bottom: 2em;
+  box-shadow: 0 2px 8px #222;
+  color: #f2f2f2; /* Light text on dark */
 }
 .resume-title {
   font-size: 2em;
-  color: #2374ab;
-  text-shadow: 0 1px 1px #e3f1fb;
+  color: #36a7ff;
+  text-shadow: 0 1px 1px #000;
   margin-bottom: 0.5em;
 }
 .timeline {
-  border-left: 3px solid #2374ab;
+  border-left: 3px solid #36a7ff;
   margin-left: 1.2em;
   padding-left: 1.2em;
 }
@@ -27,7 +32,7 @@ author_profile: true
 }
 .timeline-entry:before {
   content: "•";
-  color: #2374ab;
+  color: #36a7ff;
   font-size: 1.5em;
   position: absolute;
   left: -1.2em;
@@ -35,15 +40,16 @@ author_profile: true
 }
 .badge {
   display: inline-block;
-  background: #2374ab;
-  color: #fff;
+  background: #36a7ff;
+  color: #181818;
   border-radius: 8px;
   padding: 0.2em 0.7em;
   font-size: 0.95em;
   margin-right: 0.5em;
+  font-weight: bold;
 }
 .skill-bar {
-  background: #e3f1fb;
+  background: #30353a;
   border-radius: 8px;
   height: 1.2em;
   margin-bottom: 0.6em;
@@ -51,15 +57,17 @@ author_profile: true
   position: relative;
 }
 .skill-level {
-  background: #2374ab;
+  background: #36a7ff;
   height: 100%;
   border-radius: 8px;
   text-align: right;
-  color: #fff;
+  color: #181818;
   padding-right: 0.4em;
   font-size: 0.9em;
   line-height: 1.2em;
+  font-weight: bold;
 }
+a { color: #36a7ff; }
 </style>
 
 <div class="resume-section">
