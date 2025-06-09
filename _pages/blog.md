@@ -44,7 +44,7 @@ author_profile: true
 }
 </style>
 
-# My Hashnode Blogs
+# My Hashnode Articles
 
 <div id="hashnode-blogs" class="hashnode-blogs">
   <p>Loading latest posts…</p>
