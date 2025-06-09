@@ -1,8 +1,8 @@
 ---
 layout: single
 permalink: /resume/
-title: 🚀 Capwell Murimi — Resume
-author_profile: true
+title: Capwell Murimi — Resume
+author_profile: false
 ---
 
 <style>
