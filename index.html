@@ -182,7 +182,7 @@ title: "Home"
 <section id="hashnode-section">
     <h2>Latest Articles from Hashnode</h2>
     <div id="hashnode-articles">
-      <p style="grid-column: 1/-1; text-align:center;">Loading latest articles…</p>
+      <p style="grid-column: 1/-1; text-align:center;">Loading latest articles….</p>
     </div>
 </section>
 
@@ -197,7 +197,7 @@ title: "Home"
       const query = `
         query {
           publication(host: "${username}.hashnode.dev") {
-            posts(first: 8) {
+            posts(first: 2) {
               edges {
                 node {
                   title
