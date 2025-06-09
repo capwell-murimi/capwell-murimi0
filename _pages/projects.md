@@ -122,7 +122,7 @@ Browse through my projects below.
 </div>
 
 <div class="project-card">
-  <img class="project-preview" src="assets/images/dashboard.png" alt="Power BI Hotel Dashboard Project preview" />
+  <img class="project-preview" src="/assets/images/dashboard.png" alt="Power BI Hotel Dashboard Project preview" />
   <div class="project-info">
     <p class="project-title">Power BI Hotel Dashboard</p>
     <p>Designed an interactive Business Intelligence dashboard for hotel management, delivering real-time insights on occupancy, revenue, and guest trends. Empowered hotel managers to make data-driven decisions with engaging visual analytics.</p>
