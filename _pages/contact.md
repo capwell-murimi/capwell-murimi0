@@ -63,8 +63,8 @@ author_profile: true
 <div class="contact-card">
   <h2>Let’s Connect!</h2>
   <ul class="contact-links">
-    <li>📧 <a href="mailto:your-email@example.com">your-email@example.com</a></li>
-    <li>💼 <a href="https://linkedin.com/in/your-linkedin-profile" target="_blank">LinkedIn</a></li>
+    <li>📧 <a href="mailto:your-email@example.com">capwellmurimi@gmail.com</a></li>
+    <li>💼 <a href="https://linkedin.com/in/capwell-murimi" target="_blank">LinkedIn</a></li>
     <li>💻 <a href="https://github.com/capwell-murimi" target="_blank">GitHub</a></li>
   </ul>
 </div>
