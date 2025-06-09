@@ -61,7 +61,7 @@ plugins:
 author:
   name   : "Capwell Murimi"
   avatar : "/assets/images/cap.jpg"
-  bio    : "Data professional passionate about transforming raw data into actionable insights. Specializing in data engineering, data analysis, and scalable architectures."
+  bio    : "Data enthusiast"
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
