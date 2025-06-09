@@ -126,6 +126,54 @@ title: "Home"
       margin-bottom: 1em;
     }
 
+.projects-row {
+  display: flex;
+  gap: 2em;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+.project-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  padding: 1.5em;
+  width: 360px;
+  max-width: 96vw;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: box-shadow 0.2s;
+}
+.project-card:hover {
+  box-shadow: 0 8px 32px rgba(54,167,255,0.15);
+}
+.project-preview {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1em;
+}
+.project-info {
+  text-align: center;
+}
+.project-animate {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeSlideIn 1s forwards;
+}
+.project-animate:nth-child(1) { animation-delay: 0.2s; }
+.project-animate:nth-child(2) { animation-delay: 0.5s; }
+@keyframes fadeSlideIn {
+  to { opacity: 1; transform: translateY(0); }
+}
+@media (max-width: 800px) {
+  .projects-row { flex-direction: column; align-items: center; }
+  .project-card { width: 95vw; }
+}
+
     @media (max-width: 900px) {
       #hashnode-articles {
         grid-template-columns: 1fr 1fr;
@@ -167,27 +215,31 @@ title: "Home"
   </div>
 </div>
 
-<section style="max-width:900px;margin:2em auto 2em auto;">
+<section class="featured-projects" style="max-width:900px;margin:2em auto;">
   <h2 style="color:#36a7ff;text-align:center;">Featured Projects</h2>
-  <ul style="list-style:none;padding:0;text-align:center;">
-    <li style="margin-bottom:2em;">
-      <img src="/assets/images/dashboard.png" alt="Power BI Hotel Dashboard Project preview" style="width:300px;border-radius:8px;display:block;margin:0 auto 1em auto;" />
-      <div>
-        <a href="https://github.com/capwell-murimi/kai-karo-vehicle-scraper" style="color:#00e8c4;font-weight:bold;">Power BI Hotel Dashboard</a>
-        <br />
-        Designed an interactive Business Intelligence dashboard for hotel management, delivering real-time insights on occupancy, revenue, and guest trends. Empowers hotel managers to make data-driven decisions with engaging visual analytics.
+  <div class="projects-row">
+    <div class="project-card project-animate">
+      <img src="/assets/images/dashboard.png" alt="Power BI Hotel Dashboard Project preview" class="project-preview" />
+      <div class="project-info">
+        <a href="https://github.com/capwell-murimi/kai-karo-vehicle-scraper" style="color:#00e8c4;font-weight:bold;font-size:18px;">Power BI Hotel Dashboard</a>
+        <p style="margin: 0.5em 0 0 0;">
+          Designed an interactive Business Intelligence dashboard for hotel management, delivering real-time insights on occupancy, revenue, and guest trends. Empowers hotel managers to make data-driven decisions with engaging visual analytics.
+        </p>
       </div>
-    </li>
-    <li>
-      <img src="https://plus.unsplash.com/premium_photo-1720091339077-d0f56397a0c9?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="EDA Project preview" style="width:300px;border-radius:8px;display:block;margin:0 auto 1em auto;" />
-      <div>
-        <a href="https://github.com/capwell-murimi/eda-project" style="color:#00e8c4;font-weight:bold;">Exploratory Data Analysis Project</a>
-        <br />
-        Explored complex data sets using visualization and statistics to uncover actionable insights and trends for business strategies.
+    </div>
+    <div class="project-card project-animate">
+      <img src="https://plus.unsplash.com/premium_photo-1720091339077-d0f56397a0c9?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="EDA Project preview" class="project-preview" />
+      <div class="project-info">
+        <a href="https://github.com/capwell-murimi/eda-project" style="color:#00e8c4;font-weight:bold;font-size:18px;">Exploratory Data Analysis Project</a>
+        <p style="margin: 0.5em 0 0 0;">
+          Explored complex data sets using visualization and statistics to uncover actionable insights and trends for business strategies.
+        </p>
       </div>
-    </li>
-  </ul>
+    </div>
+  </div>
 </section>
+
+
 
 <section id="hashnode-section">
     <h2>My Work on Hashnode</h2>
