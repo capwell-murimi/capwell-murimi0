@@ -112,7 +112,7 @@ Browse through my projects below.
 </div>
 
 <div class="project-card">
-  <img class="https://images.unsplash.com/photo-1561625116-df74735458a5?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Exploratory Data Analysis Project preview" />
+  <img class="project-preview" src="https://images.unsplash.com/photo-1561625116-df74735458a5?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Exploratory Data Analysis Project preview" />
   <div class="project-info">
     <p class="project-title">Exploratory Data Analysis Project (Titanic Dataset)</p>
     <p>Explored the Titanic dataset using visualization and statistics to uncover actionable insights and trends for business strategies.</p>
