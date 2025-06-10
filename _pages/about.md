@@ -15,7 +15,24 @@ permalink: /about/
   border: 1px solid #eee;
   font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
   color: #181825;
+  transition: 
+    box-shadow 0.35s cubic-bezier(.4,0,.2,1),
+    transform 0.35s cubic-bezier(.4,0,.2,1);
+  /* Fade-in effect */
+  opacity: 0;
+  animation: fadeInAbout 0.8s ease-in forwards;
 }
+
+@keyframes fadeInAbout {
+  to { opacity: 1; }
+}
+
+.about-card:hover {
+  box-shadow: 0 12px 40px 0 rgba(107,70,193,0.18),
+    0 0 0 4px #a78bfa33;
+  transform: translateY(-8px) scale(1.025);
+}
+
 .about-card h1 {
   font-weight: 700;
   color: #6d28d9;
