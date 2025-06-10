@@ -104,18 +104,18 @@ Browse through my projects below.
 <div class="project-card">
   <img class="project-preview" src="https://images.unsplash.com/photo-1621955964441-c173e01c135b?q=80&w=2086&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Data Wrangling Project preview" />
   <div class="project-info">
-    <p class="project-title">Data Wrangling Project</p>
-    <p>Cleaned, transformed, and validated raw data sets to prepare for analysis—ensuring data quality and consistency for downstream tasks.</p>
+    <p class="project-title">Data Wrangling Project (Netflix Dataset)</p>
+    <p>Cleaned, transformed, and validated raw data sets from the Netflix dataset to prepare for analysis—ensuring data quality and consistency for downstream tasks.</p>
     <p><strong>Technologies:</strong> Python</p>
     <a class="project-link" href="https://www.kaggle.com/code/capwellmurimi/data-wrangling-netflix" target="_blank">View Code</a>
   </div>
 </div>
 
 <div class="project-card">
-  <img class="project-preview" src="https://plus.unsplash.com/premium_photo-1720091339077-d0f56397a0c9?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="EDA Project preview" />
+  <img class="project-preview" src="https://plus.unsplash.com/premium_photo-1720091339077-d0f56397a0c9?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Exploratory Data Analysis Project preview" />
   <div class="project-info">
-    <p class="project-title">Exploratory Data Analysis Project</p>
-    <p>Explored complex data sets using visualization and statistics to uncover actionable insights and trends for business strategies.</p>
+    <p class="project-title">Exploratory Data Analysis Project (Titanic Dataset)</p>
+    <p>Explored the Titanic dataset using visualization and statistics to uncover actionable insights and trends for business strategies.</p>
     <p><strong>Technologies:</strong> Pandas, Matplotlib, Seaborn</p>
     <a class="project-link" href="https://www.kaggle.com/code/capwellmurimi/titanic-eda" target="_blank">View Code</a>
   </div>
