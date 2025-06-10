@@ -97,7 +97,7 @@ Browse through my projects below.
     <p class="project-title">Data Scraping Project</p>
     <p>Automated extraction of tabular web data into structured formats for fast analysis, using Python’s web scraping stack.</p>
     <p><strong>Technologies:</strong> Beautiful Soup, Requests, Pandas</p>
-    <a class="project-link" href="https://github.com/capwell-murimi/data-scraping-project" target="_blank">View Code</a>
+    <a class="project-link" href="https://colab.research.google.com/drive/1O6ZkB5XcXt1ALwwNA4dhEw2FwGZbnoLx?usp=sharing" target="_blank">View Code</a>
   </div>
 </div>
 
@@ -107,7 +107,7 @@ Browse through my projects below.
     <p class="project-title">Data Wrangling Project</p>
     <p>Cleaned, transformed, and validated raw data sets to prepare for analysis—ensuring data quality and consistency for downstream tasks.</p>
     <p><strong>Technologies:</strong> Python</p>
-    <a class="project-link" href="https://github.com/capwell-murimi/data-wrangling-project" target="_blank">View Code</a>
+    <a class="project-link" href="https://www.kaggle.com/code/capwellmurimi/data-wrangling-netflix" target="_blank">View Code</a>
   </div>
 </div>
 
@@ -117,7 +117,7 @@ Browse through my projects below.
     <p class="project-title">Exploratory Data Analysis Project</p>
     <p>Explored complex data sets using visualization and statistics to uncover actionable insights and trends for business strategies.</p>
     <p><strong>Technologies:</strong> Pandas, Matplotlib, Seaborn</p>
-    <a class="project-link" href="https://github.com/capwell-murimi/eda-project" target="_blank">View Code</a>
+    <a class="project-link" href="https://www.kaggle.com/code/capwellmurimi/titanic-eda" target="_blank">View Code</a>
   </div>
 </div>
 
@@ -127,7 +127,7 @@ Browse through my projects below.
     <p class="project-title">Power BI Hotel Dashboard</p>
     <p>Designed an interactive Business Intelligence dashboard for hotel management, delivering real-time insights on occupancy, revenue, and guest trends. Empowered hotel managers to make data-driven decisions with engaging visual analytics.</p>
     <p><strong>Technologies:</strong> Power BI</p>
-     <a class="project-link" href="https://github.com/capwell-murimi/kai-karo-vehicle-scraper" target="_blank">View Code</a>
+     <a class="project-link" href="https://drive.google.com/drive/folders/1QJVILO4gPyY9POEoFYBTBFj_tmWnvzRx" target="_blank">View Code</a>
   </div>
 </div>
 
@@ -137,6 +137,6 @@ Browse through my projects below.
     <p class="project-title">Kai & Karo Vehicle Scraper</p>
     <p>Scraped all vehicles listed on the Kai and Karo website, extracting price, make, year, and transmission mode (automatic/manual) for each vehicle. Learned to automate scraping across multiple pages for comprehensive data collection and market analysis.</p>
     <p><strong>Technologies:</strong> Python, Beautiful Soup, Requests, Pandas</p>
-    <a class="project-link" href="https://github.com/capwell-murimi/kai-karo-vehicle-scraper" target="_blank">View Code</a>
+    <a class="project-link" href="https://colab.research.google.com/drive/1Q56xu_3H9Kcf8lYfCl7lnPK9nLeYA3uY?usp=sharing" target="_blank">View Code</a>
   </div>
 </div>
