@@ -6,16 +6,22 @@ permalink: /contact/
 
 <style>
 :root {
-  --primary: #6a4cff;
-  --primary-dark: #4b3bbd;
-  --background: #f6f8fa;
-  --card-bg: #fff;
-  --border: #eaeaea;
-  --input-bg: #f4f7fb;
-  --input-border: #e0e3e7;
+  --primary: #a78bfa;
+  --primary-dark: #6d28d9;
+  --background: #181825;
+  --card-bg: #232339;
+  --border: #2d2e47;
+  --input-bg: #282a3a;
+  --input-border: #393a53;
   --input-focus: var(--primary);
   --radius: 1.2em;
-  --shadow: 0 8px 32px rgba(80, 80, 125, 0.13);
+  --shadow: 0 8px 32px rgba(40,40,90,0.32);
+  --text-main: #f3f4fa;
+  --text-muted: #b5b7c9;
+}
+
+body, html {
+  background: var(--background) !important;
 }
 
 .contact-card {
@@ -28,6 +34,7 @@ permalink: /contact/
   border: 1px solid var(--border);
   font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
   position: relative;
+  color: var(--text-main);
 }
 
 .contact-card h1 {
@@ -36,12 +43,12 @@ permalink: /contact/
   font-weight: 700;
   letter-spacing: -.02em;
   margin-bottom: 1.2rem;
-  color: var(--primary-dark);
+  color: var(--primary);
 }
 
 .contact-card .desc {
   text-align: center;
-  color: #6b6e76;
+  color: var(--text-muted);
   font-size: 1.05rem;
   margin-bottom: 2.2rem;
 }
@@ -64,19 +71,21 @@ permalink: /contact/
   background: var(--input-bg);
   border-radius: 0.7em;
   font-size: 1.12em;
+  color: var(--text-main);
   transition: border-color 0.2s, background 0.2s;
   outline: none;
+  resize: vertical;
 }
 .floating-label input:focus,
 .floating-label textarea:focus {
   border-color: var(--input-focus);
-  background: #fff;
+  background: #23233a;
 }
 .floating-label label {
   position: absolute;
   top: 1.0em;
   left: 1em;
-  color: #888f9b;
+  color: var(--text-muted);
   font-size: 1.08em;
   background: transparent;
   pointer-events: none;
@@ -104,7 +113,7 @@ permalink: /contact/
   font-size: 1.16em;
   font-weight: 600;
   cursor: pointer;
-  box-shadow: 0 2px 12px rgba(80,80,125,0.11);
+  box-shadow: 0 2px 12px rgba(80,80,125,0.18);
   transition: background 0.16s;
   margin-top: 0.3em;
 }
@@ -116,7 +125,7 @@ permalink: /contact/
   text-align: center;
   margin-top: 1.6em;
   font-size: 1em;
-  color: #606070;
+  color: var(--text-muted);
 }
 .direct-email a {
   color: var(--primary);
