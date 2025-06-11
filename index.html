@@ -9,6 +9,8 @@ title: "Home"
   <meta charset="UTF-8">
   <title>Capwell Murimi | Data Professional</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <!-- tsParticles library for animated background -->
   <script src="https://cdn.jsdelivr.net/npm/tsparticles@3.3.0/tsparticles.bundle.min.js"></script>
   <style>
@@ -21,7 +23,6 @@ title: "Home"
       min-height: 100vh;
       overflow-x: hidden;
     }
-    /* Particle background container */
     #tsparticles {
       position: fixed;
       z-index: 0;
@@ -31,7 +32,7 @@ title: "Home"
       height: 100vh;
       pointer-events: none;
     }
-    /* Hero section with glass effect */
+    /* Hero section */
     .hero {
       position: relative;
       z-index: 1;
@@ -45,6 +46,11 @@ title: "Home"
       border: 1.5px solid rgba(54,167,255, 0.18);
       text-align: center;
       transition: box-shadow 0.2s;
+      animation: heroFadeIn 1s cubic-bezier(.4,2,.6,.8);
+    }
+    @keyframes heroFadeIn {
+      from { opacity: 0; transform: translateY(40px);}
+      to { opacity: 1; transform: translateY(0);}
     }
     .hero-img {
       width: 128px;
@@ -75,26 +81,31 @@ title: "Home"
     }
     .hero-icons {
       margin: 1.3em 0 0.5em 0;
-      letter-spacing: 0.17em;
       display: flex;
       justify-content: center;
       gap: 1.4em;
     }
     .hero-icons a {
       color: #36a7ff;
-      font-size: 1.45em;
-      padding: 0.4em 0.7em;
+      font-size: 2em;
+      padding: 0.35em 0.6em;
       border-radius: 12px;
       background: rgba(54,167,255,0.10);
       box-shadow: 0 2px 10px #36a7ff33;
       text-decoration: none;
-      transition: background 0.15s, color 0.15s, box-shadow 0.15s;
-      font-weight: 500;
+      transition: background 0.15s, color 0.15s, box-shadow 0.15s, transform 0.13s;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
     }
     .hero-icons a:hover {
       background: #00e8c4;
       color: #232526;
       box-shadow: 0 6px 28px #00e8c444;
+      transform: translateY(-3px) scale(1.13);
+    }
+    .hero-icons i {
+      pointer-events: none;
     }
 
     /* Featured Projects Section */
@@ -137,6 +148,15 @@ title: "Home"
       overflow: hidden;
       position: relative;
       cursor: pointer;
+      opacity: 0;
+      transform: translateY(40px);
+      animation: fadeSlideIn 1s forwards;
+    }
+    .project-card:nth-child(1) { animation-delay: 0.18s; }
+    .project-card:nth-child(2) { animation-delay: 0.38s; }
+    .project-card:nth-child(3) { animation-delay: 0.58s; }
+    @keyframes fadeSlideIn {
+      to { opacity: 1; transform: translateY(0); }
     }
     .project-card:hover {
       transform: translateY(-9px) scale(1.025) rotate(-1.1deg);
@@ -184,18 +204,6 @@ title: "Home"
       margin: 0.7em 0 0 0;
       text-shadow: 0 2px 10px #112a;
     }
-    /* Animation for project cards */
-    .project-animate {
-      opacity: 0;
-      transform: translateY(40px);
-      animation: fadeSlideIn 1s forwards;
-    }
-    .project-animate:nth-child(1) { animation-delay: 0.18s; }
-    .project-animate:nth-child(2) { animation-delay: 0.38s; }
-    .project-animate:nth-child(3) { animation-delay: 0.58s; }
-    @keyframes fadeSlideIn {
-      to { opacity: 1; transform: translateY(0); }
-    }
     @media (max-width: 1180px) {
       .projects-row { gap: 1.12em; }
       .project-card { width: 90vw; }
@@ -212,7 +220,7 @@ title: "Home"
       .project-card { padding: 1.1em 0.5em 1.2em 0.5em; }
       .project-preview { height: 150px; }
     }
-    /* Hashnode section keeps its original style */
+    /* Hashnode section styles stay as before */
     #hashnode-section {
       margin: 3.2em 0 2.5em 0;
       position: relative;
@@ -304,7 +312,7 @@ title: "Home"
   </style>
 </head>
 <body>
-  <!-- Particle background (fixed and behind content) -->
+  <!-- Particle background -->
   <div id="tsparticles"></div>
 
   <div class="hero">
@@ -314,16 +322,16 @@ title: "Home"
       Always learning, always building.
     </div>
     <div class="hero-icons">
-      <a href="https://github.com/capwell-murimi" target="_blank">GitHub</a>
-      <a href="https://linkedin.com/in/capwell-murimi" target="_blank">LinkedIn</a>
-      <a href="mailto:capwellmurimi@gmail.com">Email</a>
+      <a href="https://github.com/capwell-murimi" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com/in/capwell-murimi" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="mailto:capwellmurimi@gmail.com" title="Email"><i class="fa fa-envelope"></i></a>
     </div>
   </div>
 
   <section class="featured-projects">
     <h2>Featured Projects</h2>
     <div class="projects-row">
-      <div class="project-card project-animate">
+      <div class="project-card">
         <img src="/assets/images/dashboard.png" alt="Power BI Hotel Dashboard Project preview" class="project-preview" />
         <div class="project-info">
           <a href="https://drive.google.com/drive/folders/1QJVILO4gPyY9POEoFYBTBFj_tmWnvzRx" target="_blank">Power BI Hotel Dashboard</a>
@@ -332,7 +340,7 @@ title: "Home"
           </p>
         </div>
       </div>
-      <div class="project-card project-animate">
+      <div class="project-card">
         <img src="https://images.unsplash.com/photo-1621955964441-c173e01c135b?q=80&w=2086&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Data Wrangling Project preview" class="project-preview" />
         <div class="project-info">
           <a href="https://www.kaggle.com/code/capwellmurimi/data-wrangling-netflix" target="_blank">Data Wrangling Project (Netflix Dataset)</a>
@@ -341,7 +349,7 @@ title: "Home"
           </p>
         </div>
       </div>
-      <div class="project-card project-animate">
+      <div class="project-card">
         <img src="https://images.unsplash.com/photo-1561625116-df74735458a5?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="EDA Project preview" class="project-preview" />
         <div class="project-info">
           <a href="https://www.kaggle.com/code/capwellmurimi/titanic-eda" target="_blank">Exploratory Data Analysis Project (Titanic Dataset)</a>
