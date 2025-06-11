@@ -18,48 +18,205 @@ title: "Home"
       font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
       margin: 0;
       padding: 0;
+      min-height: 100vh;
+      overflow-x: hidden;
     }
-    /* Ensure main content is above particles */
-    .hero, .featured-projects, #hashnode-section { position: relative; z-index: 1; }
-
+    /* Particle background container */
+    #tsparticles {
+      position: fixed;
+      z-index: 0;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      pointer-events: none;
+    }
+    /* Hero section with glass effect */
     .hero {
+      position: relative;
+      z-index: 1;
+      margin: 4vw auto 2vw auto;
+      max-width: 520px;
+      padding: 2.5em 2.5em 2em 2.5em;
+      border-radius: 32px;
+      background: rgba(30, 34, 48, 0.63);
+      box-shadow: 0 8px 40px 0 rgba(54,167,255,0.12);
+      backdrop-filter: blur(14px) saturate(120%);
+      border: 1.5px solid rgba(54,167,255, 0.18);
       text-align: center;
-      padding: 3.5em 1em 2em 1em;
-      background: linear-gradient(120deg, #232526 0%, #314755 80%);
+      transition: box-shadow 0.2s;
     }
     .hero-img {
-      width: 120px;
-      height: 120px;
+      width: 128px;
+      height: 128px;
       border-radius: 50%;
       object-fit: cover;
-      border: 4px solid #36a7ff;
-      margin-bottom: 1em;
-      box-shadow: 0 2px 18px #111a;
+      border: 5px solid #36a7ff;
+      margin-bottom: 1.2em;
+      box-shadow: 0 2px 18px #111a, 0 0 0 8px rgba(54,167,255,0.07);
       background: #232526;
+      transition: box-shadow 0.2s;
     }
     .hero-title {
-      font-size: 2.5em;
+      font-size: 2.8em;
       color: #36a7ff;
       margin: 0.15em 0 0.13em 0;
       font-weight: bold;
-      letter-spacing: 0.02em;
+      letter-spacing: 0.04em;
+      text-shadow: 0 5px 20px #1f2635b3;
     }
     .hero-desc {
-      font-size: 1.23em;
+      font-size: 1.25em;
       color: #e0e0e0;
       max-width: 600px;
       margin: 0 auto 1.2em auto;
       line-height: 1.65;
+      text-shadow: 0 2px 16px #1123;
     }
     .hero-icons {
-      font-size: 1.3em;
-      color: #00e8c4;
-      margin: 0.7em 0 0.5em 0;
+      margin: 1.3em 0 0.5em 0;
       letter-spacing: 0.17em;
+      display: flex;
+      justify-content: center;
+      gap: 1.4em;
+    }
+    .hero-icons a {
+      color: #36a7ff;
+      font-size: 1.45em;
+      padding: 0.4em 0.7em;
+      border-radius: 12px;
+      background: rgba(54,167,255,0.10);
+      box-shadow: 0 2px 10px #36a7ff33;
+      text-decoration: none;
+      transition: background 0.15s, color 0.15s, box-shadow 0.15s;
+      font-weight: 500;
+    }
+    .hero-icons a:hover {
+      background: #00e8c4;
+      color: #232526;
+      box-shadow: 0 6px 28px #00e8c444;
     }
 
+    /* Featured Projects Section */
+    .featured-projects {
+      position: relative;
+      z-index: 1;
+      max-width: 1140px;
+      margin: 3em auto 2.5em auto;
+      padding: 2em 0.8em 2.2em 0.8em;
+    }
+    .featured-projects h2 {
+      color: #36a7ff;
+      text-align: center;
+      letter-spacing: 0.03em;
+      font-size: 2.2em;
+      margin-bottom: 1.5em;
+      font-weight: 700;
+      text-shadow: 0 2px 12px #36a7ff1a;
+    }
+    .projects-row {
+      display: flex;
+      gap: 2.2em;
+      justify-content: center;
+      align-items: stretch;
+      flex-wrap: wrap;
+    }
+    .project-card {
+      background: rgba(31, 35, 47, 0.86);
+      border-radius: 18px;
+      box-shadow: 0 8px 40px rgba(54,167,255,0.13), 0 2px 18px #222a;
+      padding: 1.6em 1.3em 1.7em 1.3em;
+      width: 370px;
+      max-width: 96vw;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: transform 0.2s, box-shadow 0.2s;
+      border: 1.5px solid rgba(54,167,255,0.11);
+      overflow: hidden;
+      position: relative;
+      cursor: pointer;
+    }
+    .project-card:hover {
+      transform: translateY(-9px) scale(1.025) rotate(-1.1deg);
+      box-shadow: 0 16px 52px #36a7ff22, 0 8px 28px #0af6ff33;
+      border-color: #36a7ff55;
+    }
+    .project-preview {
+      width: 100%;
+      height: 190px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-bottom: 1em;
+      box-shadow: 0 2px 16px #222b;
+      border: 2px solid #36a7ff16;
+      transition: filter 0.2s, border-color 0.2s;
+    }
+    .project-card:hover .project-preview {
+      filter: brightness(1.07) contrast(1.1) saturate(1.13);
+      border-color: #00e8c4bb;
+    }
+    .project-info {
+      text-align: center;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .project-info a {
+      color: #00e8c4;
+      font-weight: 700;
+      font-size: 1.18em;
+      text-decoration: none;
+      transition: color 0.15s;
+      margin-bottom: 0.41em;
+      text-shadow: 0 2px 12px #00e8c422;
+    }
+    .project-info a:hover {
+      color: #36a7ff;
+      text-decoration: underline;
+    }
+    .project-info p {
+      color: #e0e0e0;
+      font-size: 1.01em;
+      line-height: 1.55;
+      margin: 0.7em 0 0 0;
+      text-shadow: 0 2px 10px #112a;
+    }
+    /* Animation for project cards */
+    .project-animate {
+      opacity: 0;
+      transform: translateY(40px);
+      animation: fadeSlideIn 1s forwards;
+    }
+    .project-animate:nth-child(1) { animation-delay: 0.18s; }
+    .project-animate:nth-child(2) { animation-delay: 0.38s; }
+    .project-animate:nth-child(3) { animation-delay: 0.58s; }
+    @keyframes fadeSlideIn {
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @media (max-width: 1180px) {
+      .projects-row { gap: 1.12em; }
+      .project-card { width: 90vw; }
+    }
+    @media (max-width: 800px) {
+      .projects-row { flex-direction: column; align-items: center; gap: 2em; }
+      .project-card { width: 97vw; }
+      .hero { margin: 1.5em auto; }
+      .featured-projects { padding: 0.7em 0.2em; }
+    }
+    @media (max-width: 600px) {
+      .hero-title { font-size: 1.5em; }
+      .hero-desc { font-size: 1em; }
+      .project-card { padding: 1.1em 0.5em 1.2em 0.5em; }
+      .project-preview { height: 150px; }
+    }
+    /* Hashnode section keeps its original style */
     #hashnode-section {
       margin: 3.2em 0 2.5em 0;
+      position: relative;
+      z-index: 1;
     }
     #hashnode-section h2 {
       text-align: center;
@@ -130,55 +287,6 @@ title: "Home"
       color: #e0e0e0;
       margin-bottom: 1em;
     }
-
-    .projects-row {
-      display: flex;
-      gap: 2em;
-      justify-content: center;
-      align-items: stretch;
-      flex-wrap: wrap;
-    }
-    .project-card {
-      background: #121212;
-      border-radius: 12px;
-      box-shadow: 0 4px 24px rgba(0,0,0,0.08);
-      padding: 1.5em;
-      width: 360px;
-      max-width: 96vw;
-      box-sizing: border-box;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      transition: box-shadow 0.2s;
-    }
-    .project-card:hover {
-      box-shadow: 0 8px 32px rgba(54,167,255,0.15);
-    }
-    .project-preview {
-      width: 100%;
-      height: 180px;
-      object-fit: cover;
-      border-radius: 8px;
-      margin-bottom: 1em;
-    }
-    .project-info {
-      text-align: center;
-    }
-    .project-animate {
-      opacity: 0;
-      transform: translateY(40px);
-      animation: fadeSlideIn 1s forwards;
-    }
-    .project-animate:nth-child(1) { animation-delay: 0.2s; }
-    .project-animate:nth-child(2) { animation-delay: 0.5s; }
-    .project-animate:nth-child(3) { animation-delay: 0.8s; }
-    @keyframes fadeSlideIn {
-      to { opacity: 1; transform: translateY(0); }
-    }
-    @media (max-width: 800px) {
-      .projects-row { flex-direction: column; align-items: center; }
-      .project-card { width: 95vw; }
-    }
     @media (max-width: 900px) {
       #hashnode-articles {
         grid-template-columns: 1fr 1fr;
@@ -192,18 +300,12 @@ title: "Home"
         max-width: 99vw;
         padding: 0 1vw;
       }
-      .hero-title {
-        font-size: 1.6em;
-      }
-      .hero-desc {
-        font-size: 1em;
-      }
     }
   </style>
 </head>
 <body>
   <!-- Particle background (fixed and behind content) -->
-  <div id="tsparticles" style="position:fixed;z-index:0;top:0;left:0;width:100vw;height:100vh;"></div>
+  <div id="tsparticles"></div>
 
   <div class="hero">
     <img class="hero-img" src="assets/images/cap.jpg" alt="Capwell Murimi">
@@ -212,20 +314,20 @@ title: "Home"
       Always learning, always building.
     </div>
     <div class="hero-icons">
-      <a href="https://github.com/capwell-murimi" target="_blank" style="color:#36a7ff;margin:0 0.6em;text-decoration:none;">GitHub</a>
-      <a href="https://linkedin.com/in/capwell-murimi" target="_blank" style="color:#00e8c4;margin:0 0.6em;text-decoration:none;">LinkedIn</a>
-      <a href="mailto:capwellmurimi@gmail.com" style="color:#e0e0e0;margin:0 0.6em;text-decoration:none;">Email</a>
+      <a href="https://github.com/capwell-murimi" target="_blank">GitHub</a>
+      <a href="https://linkedin.com/in/capwell-murimi" target="_blank">LinkedIn</a>
+      <a href="mailto:capwellmurimi@gmail.com">Email</a>
     </div>
   </div>
 
-  <section class="featured-projects" style="max-width:900px;margin:2em auto;">
-    <h2 style="color:#36a7ff;text-align:center;">Featured Projects</h2>
+  <section class="featured-projects">
+    <h2>Featured Projects</h2>
     <div class="projects-row">
       <div class="project-card project-animate">
         <img src="/assets/images/dashboard.png" alt="Power BI Hotel Dashboard Project preview" class="project-preview" />
         <div class="project-info">
-          <a href="https://drive.google.com/drive/folders/1QJVILO4gPyY9POEoFYBTBFj_tmWnvzRx" style="color:#00e8c4;font-weight:bold;font-size:18px;">Power BI Hotel Dashboard</a>
-          <p style="margin: 0.5em 0 0 0;">
+          <a href="https://drive.google.com/drive/folders/1QJVILO4gPyY9POEoFYBTBFj_tmWnvzRx" target="_blank">Power BI Hotel Dashboard</a>
+          <p>
             Designed an interactive Business Intelligence dashboard for hotel management, delivering real-time insights on occupancy, revenue, and guest trends. Empowers hotel managers to make data-driven decisions.
           </p>
         </div>
@@ -233,8 +335,8 @@ title: "Home"
       <div class="project-card project-animate">
         <img src="https://images.unsplash.com/photo-1621955964441-c173e01c135b?q=80&w=2086&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Data Wrangling Project preview" class="project-preview" />
         <div class="project-info">
-          <a href="https://www.kaggle.com/code/capwellmurimi/data-wrangling-netflix" style="color:#00e8c4;font-weight:bold;font-size:18px;">Data Wrangling Project (Netflix Dataset)</a>
-          <p style="margin: 0.5em 0 0 0;">
+          <a href="https://www.kaggle.com/code/capwellmurimi/data-wrangling-netflix" target="_blank">Data Wrangling Project (Netflix Dataset)</a>
+          <p>
             Cleaned, transformed, and validated raw data sets from the Netflix dataset to prepare for analysis—ensuring data quality and consistency for downstream tasks.
           </p>
         </div>
@@ -242,8 +344,8 @@ title: "Home"
       <div class="project-card project-animate">
         <img src="https://images.unsplash.com/photo-1561625116-df74735458a5?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="EDA Project preview" class="project-preview" />
         <div class="project-info">
-          <a href="https://www.kaggle.com/code/capwellmurimi/titanic-eda" style="color:#00e8c4;font-weight:bold;font-size:18px;">Exploratory Data Analysis Project (Titanic Dataset)</a>
-          <p style="margin: 0.5em 0 0 0;">
+          <a href="https://www.kaggle.com/code/capwellmurimi/titanic-eda" target="_blank">Exploratory Data Analysis Project (Titanic Dataset)</a>
+          <p>
             Explored the Titanic dataset using visualization and statistics to uncover actionable insights and trends for business strategies.
           </p>
         </div>
@@ -258,6 +360,35 @@ title: "Home"
     </div>
   </section>
 
+  <script>
+    /* tsParticles initialization */
+    window.addEventListener('DOMContentLoaded', () => {
+      tsParticles.load("tsparticles", {
+        fpsLimit: 60,
+        background: { color: "#121212" },
+        particles: {
+          color: { value: "#36a7ff" },
+          links: { enable: true, color: "#36a7ff", distance: 120, opacity: 0.3, width: 1 },
+          move: { enable: true, speed: 1, outModes: { default: "bounce" } },
+          number: { value: 44, density: { enable: true, area: 800 } },
+          opacity: { value: 0.46 },
+          shape: { type: "circle" },
+          size: { value: { min: 1, max: 3.5 } }
+        },
+        interactivity: {
+          events: {
+            onHover: { enable: true, mode: "repulse" },
+            onClick: { enable: true, mode: "push" }
+          },
+          modes: {
+            repulse: { distance: 100, duration: 0.4 },
+            push: { quantity: 3 }
+          }
+        },
+        detectRetina: true
+      });
+    });
+  </script>
   <script>
     const HASHNODE_USERNAME = "capwell"; // Change if your Hashnode username is different
 
@@ -313,34 +444,5 @@ title: "Home"
         document.getElementById("hashnode-articles").innerHTML = "<p style='grid-column: 1/-1; text-align:center;'>Couldn't load articles from Hashnode.</p>";
       });
   </script>
-
-  <!-- Particle animation setup -->
-  <script>
-    tsParticles.load("tsparticles", {
-      fpsLimit: 60,
-      background: { color: "#121212" },
-      particles: {
-        color: { value: "#36a7ff" },
-        links: { enable: true, color: "#36a7ff", distance: 120, opacity: 0.3, width: 1 },
-        move: { enable: true, speed: 1, outModes: { default: "bounce" } },
-        number: { value: 40, density: { enable: true, area: 800 } },
-        opacity: { value: 0.55 },
-        shape: { type: "circle" },
-        size: { value: { min: 1, max: 3 } }
-      },
-      interactivity: {
-        events: {
-          onHover: { enable: true, mode: "repulse" },
-          onClick: { enable: true, mode: "push" }
-        },
-        modes: {
-          repulse: { distance: 100, duration: 0.4 },
-          push: { quantity: 3 }
-        }
-      },
-      detectRetina: true
-    });
-  </script>
 </body>
 </html>
-
