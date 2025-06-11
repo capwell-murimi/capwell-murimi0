@@ -1,7 +1,7 @@
 ---
 layout: home
 permalink: /blog/
-title: Blog
+title: Challenges
 author_profile: true
 ---
 
@@ -44,7 +44,7 @@ author_profile: true
 }
 </style>
 
-# My Hashnode Articles
+# My Hashnode Write ups
 
 <div id="hashnode-blogs" class="hashnode-blogs">
   <p>Loading latest posts…</p>
