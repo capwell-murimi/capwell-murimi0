@@ -94,7 +94,7 @@ Detail-oriented IT professional with 1 year of practical experience and demonstr
   <div class="timeline-entry">
     <span class="badge">GDSC CO–LEAD VOLUNTEER</span> <br>
     Co-operative University – Nairobi, Karen <br>
-    <i>Jun 2017 – Aug 2019</i>
+    <i>Jun 2023 – Aug 2024</i>
     <ul>
       <li>Organized tech-focused events: Data Science, web & mobile development.</li>
       <li>Grew community through data-driven workshops and feedback analysis.</li>
