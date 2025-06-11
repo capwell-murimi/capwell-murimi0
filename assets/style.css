@@ -1,0 +1,128 @@
+/* Modern Portfolio Theme for Capwell Murimi */
+:root {
+  --primary: #36a7ff;
+  --secondary: #00e8c4;
+  --accent: #f5a623;
+  --background: #101820;
+  --surface: #192734;
+  --text: #f5f6fa;
+  --text-muted: #b0b8c1;
+  --border-radius: 12px;
+  --spacing: 1.5rem;
+  --font-main: 'Inter', 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+  background: var(--background);
+  color: var(--text);
+  font-family: var(--font-main);
+  margin: 0;
+  padding: 0;
+  line-height: 1.7;
+}
+
+header, nav, footer {
+  background: var(--surface);
+  padding: var(--spacing) 0.5rem;
+  border-radius: var(--border-radius);
+  margin-bottom: var(--spacing);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--primary);
+  font-weight: 700;
+  margin-top: 0;
+}
+
+a {
+  color: var(--secondary);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+a:hover {
+  color: var(--accent);
+}
+
+.container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background: var(--surface);
+  border-radius: var(--border-radius);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+
+.btn {
+  display: inline-block;
+  background: var(--primary);
+  color: #fff;
+  padding: 0.6em 1.5em;
+  border-radius: var(--border-radius);
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.btn:hover {
+  background: var(--secondary);
+}
+
+.featured-projects, .projects-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing);
+}
+@media (max-width: 700px) {
+  .featured-projects, .projects-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card {
+  background: var(--background);
+  border-radius: var(--border-radius);
+  box-shadow: 0 1px 6px rgba(0,0,0,0.09);
+  padding: 1rem;
+  margin-bottom: var(--spacing);
+}
+
+.skill-bar {
+  background: #222c37;
+  border-radius: 8px;
+  margin: 0.4em 0;
+  overflow: hidden;
+}
+.skill-level {
+  background: var(--primary);
+  color: #fff;
+  padding: 0.3em 0.8em;
+  border-radius: 8px 0 0 8px;
+  font-size: 1em;
+  font-weight: 600;
+  transition: width 0.6s;
+}
+
+.text-muted {
+  color: var(--text-muted);
+}
+
+img.profile-pic {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border: 3px solid var(--primary);
+  margin-bottom: 1.2em;
+}
+
+section {
+  margin-bottom: var(--spacing);
+}
+
+footer {
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 1em;
+  margin-top: 2em;
+  background: none;
+}

@@ -9,240 +9,46 @@ title: "Home"
   <meta charset="UTF-8">
   <title>Capwell Murimi | Data Professional</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    body {
-      background: #121212;
-      color: #f4f4f4;
-      font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-    .hero {
-      text-align: center;
-      padding: 3.5em 1em 2em 1em;
-      background: linear-gradient(120deg, #232526 0%, #314755 80%);
-    }
-    .hero-img {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 4px solid #36a7ff;
-      margin-bottom: 1em;
-      box-shadow: 0 2px 18px #111a;
-      background: #232526;
-    }
-    .hero-title {
-      font-size: 2.5em;
-      color: #36a7ff;
-      margin: 0.15em 0 0.13em 0;
-      font-weight: bold;
-      letter-spacing: 0.02em;
-    }
-    .hero-desc {
-      font-size: 1.23em;
-      color: #e0e0e0;
-      max-width: 600px;
-      margin: 0 auto 1.2em auto;
-      line-height: 1.65;
-    }
-    .hero-icons {
-      font-size: 1.3em;
-      color: #00e8c4;
-      margin: 0.7em 0 0.5em 0;
-      letter-spacing: 0.17em;
-    }
-
-    #hashnode-section {
-      margin: 3.2em 0 2.5em 0;
-    }
-    #hashnode-section h2 {
-      text-align: center;
-      color: #36a7ff;
-      font-size: 2em;
-      font-weight: bold;
-      letter-spacing: 0.02em;
-      margin-bottom: 1.2em;
-    }
-    #hashnode-articles {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
-      gap: 2.2em;
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 2vw;
-    }
-    .hashnode-card {
-      background: #181818;
-      color: #f2f2f2;
-      border-radius: 18px;
-      box-shadow: 0 2px 18px #222;
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
-      transition: transform 0.22s cubic-bezier(.4,2,.6,.8), box-shadow 0.22s;
-    }
-    .hashnode-card:hover {
-      transform: scale(1.045) rotate(-1deg);
-      box-shadow: 0 8px 28px #0af6ff44;
-    }
-    .hashnode-img {
-      width: 100%;
-      height: 185px;
-      object-fit: cover;
-      border-bottom: 2px solid #36a7ff;
-      transition: filter 0.2s;
-    }
-    .hashnode-card:hover .hashnode-img {
-      filter: brightness(1.12) contrast(1.1) saturate(1.1);
-    }
-    .hashnode-info {
-      padding: 1.2em 1.4em 1.4em 1.4em;
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-    .hashnode-title {
-      font-size: 1.15em;
-      font-weight: bold;
-      color: #36a7ff;
-      margin-bottom: 0.3em;
-      text-decoration: none;
-      transition: color 0.2s;
-    }
-    .hashnode-title:hover {
-      color: #00e8c4;
-      text-decoration: underline;
-    }
-    .hashnode-date {
-      font-size: 0.97em;
-      color: #b0e0ff;
-      margin-bottom: 0.8em;
-    }
-    .hashnode-desc {
-      font-size: 1em;
-      color: #e0e0e0;
-      margin-bottom: 1em;
-    }
-
-.projects-row {
-  display: flex;
-  gap: 2em;
-  justify-content: center;
-  align-items: stretch;
-  flex-wrap: wrap;
-}
-.project-card {
-  background: #121212;
-  border-radius: 12px;
-  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
-  padding: 1.5em;
-  width: 360px;
-  max-width: 96vw;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  transition: box-shadow 0.2s;
-}
-.project-card:hover {
-  box-shadow: 0 8px 32px rgba(54,167,255,0.15);
-}
-.project-preview {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 8px;
-  margin-bottom: 1em;
-}
-.project-info {
-  text-align: center;
-}
-.project-animate {
-  opacity: 0;
-  transform: translateY(40px);
-  animation: fadeSlideIn 1s forwards;
-}
-.project-animate:nth-child(1) { animation-delay: 0.2s; }
-.project-animate:nth-child(2) { animation-delay: 0.5s; }
-@keyframes fadeSlideIn {
-  to { opacity: 1; transform: translateY(0); }
-}
-@media (max-width: 800px) {
-  .projects-row { flex-direction: column; align-items: center; }
-  .project-card { width: 95vw; }
-}
-
-    @media (max-width: 900px) {
-      #hashnode-articles {
-        grid-template-columns: 1fr 1fr;
-        max-width: 98vw;
-        padding: 0 1vw;
-      }
-    }
-    @media (max-width: 600px) {
-      #hashnode-articles {
-        grid-template-columns: 1fr;
-        max-width: 99vw;
-        padding: 0 1vw;
-      }
-      .hero-title {
-        font-size: 1.6em;
-      }
-      .hero-desc {
-        font-size: 1em;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="assets/style.css">
 </head>
-<body>
 
 
 
 <body>
 
-<div class="hero">
+<section class="container card hero" style="text-align:center;">
   <img class="hero-img" src="assets/images/cap.jpg" alt="Capwell Murimi">
-  <div class="hero-title">Capwell Murimi</div>
-  <div class="hero-desc">
-    Always learning, always building.
+  <div class="hero-title" style="font-size:2.7em;">Capwell Murimi</div>
+  <div class="hero-desc" style="font-size:1.25em;max-width:600px;margin:0 auto 1.2em auto;">Always learning, always building.<br><span class="text-muted">Data Professional | BI | ML | Analytics</span></div>
+  <div style="margin:1.2em 0 1.5em 0;">
+    <a href="mailto:capwellmurimi@gmail.com" class="btn" style="margin:0 0.5em 0 0;">Contact Me</a>
+    <a href="/resume/" class="btn" style="background:var(--secondary);color:#101820;margin:0 0.5em;">View Resume</a>
+    <a href="https://linkedin.com/in/capwell-murimi" target="_blank" class="btn" style="background:var(--accent);color:#101820;margin:0 0.5em;">LinkedIn</a>
   </div>
-  <div class="hero-icons">
-    <a href="https://github.com/capwell-murimi" target="_blank" style="color:#36a7ff;margin:0 0.6em;text-decoration:none;">GitHub</a>
-    <a href="https://linkedin.com/in/capwell-murimi" target="_blank" style="color:#00e8c4;margin:0 0.6em;text-decoration:none;">LinkedIn</a>
-    <a href="mailto:capwellmurimi@gmail.com" style="color:#e0e0e0;margin:0 0.6em;text-decoration:none;">Email</a>
-  </div>
-</div>
+</section>
 
-<section class="featured-projects" style="max-width:900px;margin:2em auto;">
-  <h2 style="color:#36a7ff;text-align:center;">Featured Projects</h2>
-  <div class="projects-row">
-    <div class="project-card project-animate">
+<section class="container card" style="margin:2em auto 2.5em auto;">
+  <h2 style="text-align:center;">Featured Projects</h2>
+  <div class="featured-projects">
+    <div class="card project-animate">
       <img src="/assets/images/dashboard.png" alt="Power BI Hotel Dashboard Project preview" class="project-preview" />
       <div class="project-info">
-        <a href="https://drive.google.com/drive/folders/1QJVILO4gPyY9POEoFYBTBFj_tmWnvzRx" style="color:#00e8c4;font-weight:bold;font-size:18px;">Power BI Hotel Dashboard</a>
-        <p style="margin: 0.5em 0 0 0;">
-          Designed an interactive Business Intelligence dashboard for hotel management, delivering real-time insights on occupancy, revenue, and guest trends. Empowers hotel managers to make data-driven decisions efficiently.
-        </p>
+        <a href="https://drive.google.com/drive/folders/1QJVILO4gPyY9POEoFYBTBFj_tmWnvzRx" class="btn" style="margin-bottom:0.75em;">Power BI Hotel Dashboard</a>
+        <p>Interactive BI dashboard for hotel management, real-time insights on occupancy, revenue, and guest trends.</p>
       </div>
     </div>
-    <div class="project-card project-animate">
+    <div class="card project-animate">
       <img src="https://images.unsplash.com/photo-1621955964441-c173e01c135b?q=80&w=2086&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Data Wrangling Project preview" class="project-preview" />
       <div class="project-info">
-        <a href="https://www.kaggle.com/code/capwellmurimi/data-wrangling-netflix" style="color:#00e8c4;font-weight:bold;font-size:18px;">Data Wrangling Project (Netflix Dataset)</a>
-        <p style="margin: 0.5em 0 0 0;">
-          Cleaned, transformed, and validated raw data sets from the Netflix dataset to prepare for analysis—ensuring data quality and consistency for downstream tasks.
-        </p>
+        <a href="https://www.kaggle.com/code/capwellmurimi/data-wrangling-netflix" class="btn" style="margin-bottom:0.75em;">Data Wrangling Project (Netflix Dataset)</a>
+        <p>Cleaned, transformed, and validated Netflix dataset for analysis—ensuring data quality and consistency.</p>
       </div>
     </div>
-    <div class="project-card project-animate">
+    <div class="card project-animate">
       <img src="https://images.unsplash.com/photo-1561625116-df74735458a5?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="EDA Project preview" class="project-preview" />
       <div class="project-info">
-        <a href="https://www.kaggle.com/code/capwellmurimi/titanic-eda" style="color:#00e8c4;font-weight:bold;font-size:18px;">Exploratory Data Analysis Project (Titanic Dataset)</a>
-        <p style="margin: 0.5em 0 0 0;">
-          Explored the Titanic dataset using visualization and statistics to uncover actionable insights and trends for business strategies.
-        </p>
+        <a href="https://www.kaggle.com/code/capwellmurimi/titanic-eda" class="btn" style="margin-bottom:0.75em;">Exploratory Data Analysis Project (Titanic Dataset)</a>
+        <p>Explored the Titanic dataset using visualization and statistics to uncover actionable insights and trends.</p>
       </div>
     </div>
   </div>
@@ -250,16 +56,16 @@ title: "Home"
 
 
 
-<section id="hashnode-section">
-    <h2>My Work on Hashnode</h2>
-    <div id="hashnode-articles">
-      <p style="grid-column: 1/-1; text-align:center;">Loading latest articles….</p>
-    </div>
+<section class="container card" id="hashnode-section">
+  <h2 style="text-align:center;">My Work on Hashnode</h2>
+  <div id="hashnode-articles">
+    <p class="text-muted" style="grid-column: 1/-1; text-align:center;">Loading latest articles….</p>
+  </div>
 </section>
 
 <!-- (leave your existing script logic here) -->
 
-</body>
+
 
   <script>
     const HASHNODE_USERNAME = "capwell"; // Change if your Hashnode username is different
