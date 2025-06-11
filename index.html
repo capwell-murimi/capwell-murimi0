@@ -9,6 +9,8 @@ title: "Home"
   <meta charset="UTF-8">
   <title>Capwell Murimi | Data Professional</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- tsParticles library for animated background -->
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@3.3.0/tsparticles.bundle.min.js"></script>
   <style>
     body {
       background: #121212;
@@ -17,6 +19,9 @@ title: "Home"
       margin: 0;
       padding: 0;
     }
+    /* Ensure main content is above particles */
+    .hero, .featured-projects, #hashnode-section { position: relative; z-index: 1; }
+
     .hero {
       text-align: center;
       padding: 3.5em 1em 2em 1em;
@@ -126,54 +131,54 @@ title: "Home"
       margin-bottom: 1em;
     }
 
-.projects-row {
-  display: flex;
-  gap: 2em;
-  justify-content: center;
-  align-items: stretch;
-  flex-wrap: wrap;
-}
-.project-card {
-  background: #121212;
-  border-radius: 12px;
-  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
-  padding: 1.5em;
-  width: 360px;
-  max-width: 96vw;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  transition: box-shadow 0.2s;
-}
-.project-card:hover {
-  box-shadow: 0 8px 32px rgba(54,167,255,0.15);
-}
-.project-preview {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 8px;
-  margin-bottom: 1em;
-}
-.project-info {
-  text-align: center;
-}
-.project-animate {
-  opacity: 0;
-  transform: translateY(40px);
-  animation: fadeSlideIn 1s forwards;
-}
-.project-animate:nth-child(1) { animation-delay: 0.2s; }
-.project-animate:nth-child(2) { animation-delay: 0.5s; }
-@keyframes fadeSlideIn {
-  to { opacity: 1; transform: translateY(0); }
-}
-@media (max-width: 800px) {
-  .projects-row { flex-direction: column; align-items: center; }
-  .project-card { width: 95vw; }
-}
-
+    .projects-row {
+      display: flex;
+      gap: 2em;
+      justify-content: center;
+      align-items: stretch;
+      flex-wrap: wrap;
+    }
+    .project-card {
+      background: #121212;
+      border-radius: 12px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+      padding: 1.5em;
+      width: 360px;
+      max-width: 96vw;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: box-shadow 0.2s;
+    }
+    .project-card:hover {
+      box-shadow: 0 8px 32px rgba(54,167,255,0.15);
+    }
+    .project-preview {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 1em;
+    }
+    .project-info {
+      text-align: center;
+    }
+    .project-animate {
+      opacity: 0;
+      transform: translateY(40px);
+      animation: fadeSlideIn 1s forwards;
+    }
+    .project-animate:nth-child(1) { animation-delay: 0.2s; }
+    .project-animate:nth-child(2) { animation-delay: 0.5s; }
+    .project-animate:nth-child(3) { animation-delay: 0.8s; }
+    @keyframes fadeSlideIn {
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @media (max-width: 800px) {
+      .projects-row { flex-direction: column; align-items: center; }
+      .project-card { width: 95vw; }
+    }
     @media (max-width: 900px) {
       #hashnode-articles {
         grid-template-columns: 1fr 1fr;
@@ -197,69 +202,61 @@ title: "Home"
   </style>
 </head>
 <body>
+  <!-- Particle background (fixed and behind content) -->
+  <div id="tsparticles" style="position:fixed;z-index:0;top:0;left:0;width:100vw;height:100vh;"></div>
 
-
-
-<body>
-
-<div class="hero">
-  <img class="hero-img" src="assets/images/cap.jpg" alt="Capwell Murimi">
-  <div class="hero-title">Capwell Murimi</div>
-  <div class="hero-desc">
-    Always learning, always building.
-  </div>
-  <div class="hero-icons">
-    <a href="https://github.com/capwell-murimi" target="_blank" style="color:#36a7ff;margin:0 0.6em;text-decoration:none;">GitHub</a>
-    <a href="https://linkedin.com/in/capwell-murimi" target="_blank" style="color:#00e8c4;margin:0 0.6em;text-decoration:none;">LinkedIn</a>
-    <a href="mailto:capwellmurimi@gmail.com" style="color:#e0e0e0;margin:0 0.6em;text-decoration:none;">Email</a>
-  </div>
-</div>
-
-<section class="featured-projects" style="max-width:900px;margin:2em auto;">
-  <h2 style="color:#36a7ff;text-align:center;">Featured Projects</h2>
-  <div class="projects-row">
-    <div class="project-card project-animate">
-      <img src="/assets/images/dashboard.png" alt="Power BI Hotel Dashboard Project preview" class="project-preview" />
-      <div class="project-info">
-        <a href="https://drive.google.com/drive/folders/1QJVILO4gPyY9POEoFYBTBFj_tmWnvzRx" style="color:#00e8c4;font-weight:bold;font-size:18px;">Power BI Hotel Dashboard</a>
-        <p style="margin: 0.5em 0 0 0;">
-          Designed an interactive Business Intelligence dashboard for hotel management, delivering real-time insights on occupancy, revenue, and guest trends. Empowers hotel managers to make data-driven decisions efficiently.
-        </p>
-      </div>
+  <div class="hero">
+    <img class="hero-img" src="assets/images/cap.jpg" alt="Capwell Murimi">
+    <div class="hero-title">Capwell Murimi</div>
+    <div class="hero-desc">
+      Always learning, always building.
     </div>
-    <div class="project-card project-animate">
-      <img src="https://images.unsplash.com/photo-1621955964441-c173e01c135b?q=80&w=2086&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Data Wrangling Project preview" class="project-preview" />
-      <div class="project-info">
-        <a href="https://www.kaggle.com/code/capwellmurimi/data-wrangling-netflix" style="color:#00e8c4;font-weight:bold;font-size:18px;">Data Wrangling Project (Netflix Dataset)</a>
-        <p style="margin: 0.5em 0 0 0;">
-          Cleaned, transformed, and validated raw data sets from the Netflix dataset to prepare for analysis—ensuring data quality and consistency for downstream tasks.
-        </p>
-      </div>
-    </div>
-    <div class="project-card project-animate">
-      <img src="https://images.unsplash.com/photo-1561625116-df74735458a5?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="EDA Project preview" class="project-preview" />
-      <div class="project-info">
-        <a href="https://www.kaggle.com/code/capwellmurimi/titanic-eda" style="color:#00e8c4;font-weight:bold;font-size:18px;">Exploratory Data Analysis Project (Titanic Dataset)</a>
-        <p style="margin: 0.5em 0 0 0;">
-          Explored the Titanic dataset using visualization and statistics to uncover actionable insights and trends for business strategies.
-        </p>
-      </div>
+    <div class="hero-icons">
+      <a href="https://github.com/capwell-murimi" target="_blank" style="color:#36a7ff;margin:0 0.6em;text-decoration:none;">GitHub</a>
+      <a href="https://linkedin.com/in/capwell-murimi" target="_blank" style="color:#00e8c4;margin:0 0.6em;text-decoration:none;">LinkedIn</a>
+      <a href="mailto:capwellmurimi@gmail.com" style="color:#e0e0e0;margin:0 0.6em;text-decoration:none;">Email</a>
     </div>
   </div>
-</section>
 
+  <section class="featured-projects" style="max-width:900px;margin:2em auto;">
+    <h2 style="color:#36a7ff;text-align:center;">Featured Projects</h2>
+    <div class="projects-row">
+      <div class="project-card project-animate">
+        <img src="/assets/images/dashboard.png" alt="Power BI Hotel Dashboard Project preview" class="project-preview" />
+        <div class="project-info">
+          <a href="https://drive.google.com/drive/folders/1QJVILO4gPyY9POEoFYBTBFj_tmWnvzRx" style="color:#00e8c4;font-weight:bold;font-size:18px;">Power BI Hotel Dashboard</a>
+          <p style="margin: 0.5em 0 0 0;">
+            Designed an interactive Business Intelligence dashboard for hotel management, delivering real-time insights on occupancy, revenue, and guest trends. Empowers hotel managers to make data-driven decisions.
+          </p>
+        </div>
+      </div>
+      <div class="project-card project-animate">
+        <img src="https://images.unsplash.com/photo-1621955964441-c173e01c135b?q=80&w=2086&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Data Wrangling Project preview" class="project-preview" />
+        <div class="project-info">
+          <a href="https://www.kaggle.com/code/capwellmurimi/data-wrangling-netflix" style="color:#00e8c4;font-weight:bold;font-size:18px;">Data Wrangling Project (Netflix Dataset)</a>
+          <p style="margin: 0.5em 0 0 0;">
+            Cleaned, transformed, and validated raw data sets from the Netflix dataset to prepare for analysis—ensuring data quality and consistency for downstream tasks.
+          </p>
+        </div>
+      </div>
+      <div class="project-card project-animate">
+        <img src="https://images.unsplash.com/photo-1561625116-df74735458a5?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="EDA Project preview" class="project-preview" />
+        <div class="project-info">
+          <a href="https://www.kaggle.com/code/capwellmurimi/titanic-eda" style="color:#00e8c4;font-weight:bold;font-size:18px;">Exploratory Data Analysis Project (Titanic Dataset)</a>
+          <p style="margin: 0.5em 0 0 0;">
+            Explored the Titanic dataset using visualization and statistics to uncover actionable insights and trends for business strategies.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-
-<section id="hashnode-section">
+  <section id="hashnode-section">
     <h2>My Work on Hashnode</h2>
     <div id="hashnode-articles">
       <p style="grid-column: 1/-1; text-align:center;">Loading latest articles….</p>
     </div>
-</section>
-
-<!-- (leave your existing script logic here) -->
-
-</body>
+  </section>
 
   <script>
     const HASHNODE_USERNAME = "capwell"; // Change if your Hashnode username is different
@@ -317,6 +314,33 @@ title: "Home"
       });
   </script>
 
+  <!-- Particle animation setup -->
+  <script>
+    tsParticles.load("tsparticles", {
+      fpsLimit: 60,
+      background: { color: "#121212" },
+      particles: {
+        color: { value: "#36a7ff" },
+        links: { enable: true, color: "#36a7ff", distance: 120, opacity: 0.3, width: 1 },
+        move: { enable: true, speed: 1, outModes: { default: "bounce" } },
+        number: { value: 40, density: { enable: true, area: 800 } },
+        opacity: { value: 0.55 },
+        shape: { type: "circle" },
+        size: { value: { min: 1, max: 3 } }
+      },
+      interactivity: {
+        events: {
+          onHover: { enable: true, mode: "repulse" },
+          onClick: { enable: true, mode: "push" }
+        },
+        modes: {
+          repulse: { distance: 100, duration: 0.4 },
+          push: { quantity: 3 }
+        }
+      },
+      detectRetina: true
+    });
+  </script>
 </body>
 </html>
 
