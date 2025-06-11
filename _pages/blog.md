@@ -5,7 +5,44 @@ title: Blog
 author_profile: true
 ---
 
-<link rel="stylesheet" href="/assets/style.css">
+<style>
+.hashnode-blogs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2em;
+  margin: 2em 0;
+}
+.hashnode-blog-card {
+  background: #181818;
+  color: #f2f2f2;
+  border-radius: 18px;
+  box-shadow: 0 2px 12px #222;
+  padding: 1.5em 1.4em 1.4em 1.4em;
+  transition: transform 0.25s cubic-bezier(.4,2,.6,.8), box-shadow 0.25s;
+  display: flex;
+  flex-direction: column;
+}
+.hashnode-blog-card:hover {
+  transform: scale(1.045) rotate(-1deg);
+  box-shadow: 0 8px 28px #0af6ff44;
+}
+.hashnode-blog-title {
+  font-size: 1.25em;
+  font-weight: bold;
+  color: #36a7ff;
+  margin-bottom: 0.45em;
+  text-decoration: none;
+}
+.hashnode-blog-desc {
+  color: #e0e0e0;
+  margin-bottom: 1em;
+}
+.hashnode-blog-date {
+  font-size: 0.95em;
+  color: #b0e0ff;
+  margin-bottom: 0.7em;
+}
+</style>
 
 # My Hashnode Articles
 
