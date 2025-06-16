@@ -152,6 +152,18 @@ Browse through my projects below.
 </div>
 
 <div class="project-card">
+  <img class="project-preview" src="/assets/images/HR.png" alt="Tableau HR Dashboard preview" />
+  <div class="project-info">
+    <p class="project-title">Tableau HR Dashboard</p>
+    <div class="project-section"><span class="project-label problem-label">Problem:</span>HR teams struggled to visualize and track employee metrics, leading to inefficient decision-making.</div>
+    <div class="project-section"><span class="project-label approach-label">Approach:</span>Developed an interactive Tableau dashboard displaying employee demographics, turnover rates, and key HR KPIs for actionable insights.</div>
+    <div class="project-section"><span class="project-label tools-label">Tools:</span>Tableau</div>
+    <div class="project-section"><span class="project-label result-label">Result:</span>Empowered HR departments with real-time analytics and improved workforce planning.</div>
+    <a class="project-link" href="https://public.tableau.com/views/HRDashboard_17500918044660/HRSummary?:language=en-US&publish=yes&:sid=1FD192C878D84B8EB2FF575B28ED0DA2-0:0&:redirect=auth&:display_count=n&:origin=viz_share_link" target="_blank">View Dashboard</a>
+  </div>
+</div>
+
+<div class="project-card">
   <img class="project-preview" src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=1974&auto=format&fit=crop" alt="Kai and Karo Scraper Project preview" />
   <div class="project-info">
     <p class="project-title">Kai & Karo Vehicle Scraper</p>
