@@ -104,6 +104,18 @@ Browse through my projects below.
 <div class="projects-grid">
 
 <div class="project-card">
+  <img class="project-preview" src="https://images.unsplash.com/photo-1674476459435-92fa2ab3ac04?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Linear Regression Project preview" />
+  <div class="project-info">
+    <p class="project-title">Linear Regression Analysis</p>
+    <div class="project-section"><span class="project-label problem-label">Problem:</span>Need to predict numerical values and understand relationships between variables in a dataset.</div>
+    <div class="project-section"><span class="project-label approach-label">Approach:</span>Applied linear regression modeling to real-world data, visualizing trends and evaluating model performance using statistical metrics.</div>
+    <div class="project-section"><span class="project-label tools-label">Tools:</span>Python, scikit-learn, Pandas, Matplotlib</div>
+    <div class="project-section"><span class="project-label result-label">Result:</span>Built an interpretable predictive model and generated visual insights, demonstrating foundational data science techniques.</div>
+    <a class="project-link" href="https://colab.research.google.com/drive/10PQGfLbKVuuhbbq-aHdtEhQtVaof-GM4?usp=sharing" target="_blank">View Code</a>
+  </div>
+</div>
+
+<div class="project-card">
   <img class="project-preview" src="https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Data Scraping Project preview" />
   <div class="project-info">
     <p class="project-title">Data Scraping Project</p>
