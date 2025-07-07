@@ -187,4 +187,16 @@ Browse through my projects below.
   </div>
 </div>
 
+<div class="project-card">
+  <img class="project-preview" src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=465&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Classification Models Project preview" />
+  <div class="project-info">
+    <p class="project-title">Classification Models</p>
+    <div class="project-section"><span class="project-label problem-label">Problem:</span>Needed to accurately categorize data points into distinct classes for predictive analysis.</div>
+    <div class="project-section"><span class="project-label approach-label">Approach:</span>Developed and compared multiple classification algorithms (e.g., Logistic Regression, Decision Trees, Random Forests) to determine the most effective model.</div>
+    <div class="project-section"><span class="project-label tools-label">Tools:</span>Python, scikit-learn, Pandas, Matplotlib</div>
+    <div class="project-section"><span class="project-label result-label">Result:</span>Achieved high accuracy in classifying data and provided interpretable results for further decision-making.</div>
+    <a class="project-link" href="https://colab.research.google.com/drive/18mNog6qU3IxcGB3kyS6U-L1BU5Ps5y_C?usp=sharing" target="_blank">View Code</a>
+  </div>
+</div>
+
 </div>
