@@ -117,6 +117,18 @@ Browse through my projects below.
 </div>
 
 <div class="project-card">
+  <img class="project-preview" src="https://plus.unsplash.com/premium_photo-1681710503974-e1eb619564a3?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="ANN MNIST Project preview" />
+  <div class="project-info">
+    <p class="project-title">Handwritten Digit Recognition with ANN (MNIST)</p>
+    <div class="project-section"><span class="project-label problem-label">Problem:</span>Recognizing handwritten digits efficiently and accurately using machine learning.</div>
+    <div class="project-section"><span class="project-label approach-label">Approach:</span>Built an Artificial Neural Network (ANN) using TensorFlow and Keras, following the full ML pipeline: loading and visualizing MNIST data, preprocessing, building/training the model with dense layers (ReLU & softmax), evaluating on test data, visualizing accuracy trends, and generating a confusion matrix.</div>
+    <div class="project-section"><span class="project-label tools-label">Tools:</span>TensorFlow, Keras, Python, Matplotlib</div>
+    <div class="project-section"><span class="project-label result-label">Result:</span>Successfully trained, evaluated, and visualized the ANN model’s predictions. Model saved and can be reloaded for future use.</div>
+    <a class="project-link" href="https://colab.research.google.com/drive/1wYFQlLk1SfIiti3QpRaf4g1m5Qz3-1Ei?usp=sharing" target="_blank">View Code</a>
+  </div>
+</div>
+
+<div class="project-card">
   <img class="project-preview" src="https://images.unsplash.com/photo-1674476459435-92fa2ab3ac04?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Linear Regression Project preview" />
   <div class="project-info">
     <p class="project-title">Linear Regression Analysis</p>
