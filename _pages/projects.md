@@ -104,6 +104,31 @@ Browse through my projects below.
 <div class="projects-grid">
 
 <div class="project-card">
+  <img class="project-preview" src="https://images.unsplash.com/photo-1506788941197-1cbf01bb8bc5?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="BERT Sentence Similarity preview" />
+  <div class="project-info">
+    <p class="project-title">NLP: BERT-Based Sentence Similarity Classifier</p>
+    <div class="project-section">
+      <span class="project-label problem-label">Problem:</span>
+      Automating the assessment of semantic similarity between sentence pairs for applications in NLP, such as duplicate detection and information retrieval.
+    </div>
+    <div class="project-section">
+      <span class="project-label approach-label">Approach:</span>
+      Fine-tuned a pre-trained BERT model for binary sentence similarity classification. Steps included data preprocessing, BERT tokenization, model training, and evaluation.
+    </div>
+    <div class="project-section">
+      <span class="project-label tools-label">Tools:</span>
+      Python, PyTorch, Hugging Face Transformers, Google Colab
+    </div>
+    <div class="project-section">
+      <span class="project-label result-label">Result:</span>
+      Achieved robust classification accuracy and meaningful cosine similarity evaluation. The notebook allows prediction of new sentence pairs after training.<br>
+      <a href="https://colab.research.google.com/drive/1pcDVBwET-aaP5N4bTJvv6melPOz8Ccwc?usp=sharing" target="_blank">Colab Notebook</a>
+    </div>
+    <a class="project-link" href="https://colab.research.google.com/drive/1pcDVBwET-aaP5N4bTJvv6melPOz8Ccwc?usp=sharing" target="_blank">View Notebook</a>
+  </div>
+</div>
+
+<div class="project-card">
   <img class="project-preview" src="https://images.unsplash.com/photo-1504639725590-34d0984388bd?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="MLOps Project preview" />
   <div class="project-info">
     <p class="project-title">MLOps: KNN Model Deployment</p>
@@ -127,6 +152,8 @@ Browse through my projects below.
     <a class="project-link" href="https://colab.research.google.com/drive/1wYFQlLk1SfIiti3QpRaf4g1m5Qz3-1Ei?usp=sharing" target="_blank">View Code</a>
   </div>
 </div>
+
+
 
 <div class="project-card">
   <img class="project-preview" src="https://images.unsplash.com/photo-1674476459435-92fa2ab3ac04?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Linear Regression Project preview" />
