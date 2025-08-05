@@ -128,6 +128,32 @@ Browse through my projects below.
   </div>
 </div>
 
+
+<div class="project-card">
+  <img class="project-preview" src="https://plus.unsplash.com/premium_photo-1726079247110-5e593660c7b2?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="RAG PDF Project Cover" />
+  <div class="project-info">
+    <p class="project-title">RAG PDF Query System</p>
+    <div class="project-section">
+      <span class="project-label problem-label">Problem:</span>
+      Efficient semantic querying of large PDF documents using Retrieval-Augmented Generation (RAG).
+    </div>
+    <div class="project-section">
+      <span class="project-label approach-label">Approach:</span>
+      The PDF is uploaded and split into chunks, embedded using Sentence Transformers, stored in FAISS, and queried through a LangChain-powered RAG pipeline integrated with a HuggingFace LLM for context-aware responses.
+    </div>
+    <div class="project-section">
+      <span class="project-label tools-label">Tools:</span>
+      Python, LangChain, FAISS, HuggingFace Transformers, Sentence Transformers
+    </div>
+    <div class="project-section">
+      <span class="project-label result-label">Result:</span>
+      Enables powerful semantic search and Q&A over PDF documents directly in a Colab notebook.<br>
+      <a href="https://colab.research.google.com/drive/1nkV09VibjssSBBn1z9dwDVhBxOxAf20v?usp=sharing" target="_blank">Colab Notebook</a>
+    </div>
+    <a class="project-link" href="https://colab.research.google.com/drive/1nkV09VibjssSBBn1z9dwDVhBxOxAf20v?usp=sharing" target="_blank">View Notebook</a>
+  </div>
+</div>
+
 <div class="project-card">
   <img class="project-preview" src="https://images.unsplash.com/photo-1504639725590-34d0984388bd?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="MLOps Project preview" />
   <div class="project-info">
