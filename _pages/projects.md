@@ -104,6 +104,31 @@ Browse through my projects below.
 <div class="projects-grid">
 
 <div class="project-card">
+  <img class="project-preview" src="x-raw-image://a4b2cb37533136bf620c023fa35e4d3aa6c2fc7d82a794f962a01c5107686b52" alt="Breast Cancer Predictor Cover" />
+  <div class="project-info">
+    <p class="project-title">Breast Cancer Predictor Web App</p>
+    <div class="project-section">
+      <span class="project-label problem-label">Problem:</span>
+      Early detection of breast cancer is critical, but traditional diagnosis can be slow and requires specialized expertise.
+    </div>
+    <div class="project-section">
+      <span class="project-label approach-label">Approach:</span>
+      Built a machine learning model for breast cancer prediction using scikit-learn. Deployed as an interactive web app with Streamlit for real-time risk assessment based on user input.
+    </div>
+    <div class="project-section">
+      <span class="project-label tools-label">Tools:</span>
+      Python, scikit-learn, Streamlit, pandas, CSS
+    </div>
+    <div class="project-section">
+      <span class="project-label result-label">Result:</span>
+      Provides instant breast cancer risk assessment with a user-friendly interface. <br>
+      <a href="https://breastcancerprediction-capwellsapp.streamlit.app/" target="_blank">Live Web App</a>
+    </div>
+    <a class="project-link" href="https://breastcancerprediction-capwellsapp.streamlit.app/" target="_blank">Try the App</a>
+  </div>
+</div>
+
+<div class="project-card">
   <img class="project-preview" src="https://images.unsplash.com/photo-1506788941197-1cbf01bb8bc5?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="BERT Sentence Similarity preview" />
   <div class="project-info">
     <p class="project-title">NLP: BERT-Based Sentence Similarity Classifier</p>
