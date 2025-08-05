@@ -104,7 +104,7 @@ Browse through my projects below.
 <div class="projects-grid">
 
 <div class="project-card">
-  <img class="project-preview" src="x-raw-image://a4b2cb37533136bf620c023fa35e4d3aa6c2fc7d82a794f962a01c5107686b52" alt="Breast Cancer Predictor Cover" />
+  <img class="project-preview" src="https://images.pexels.com/photos/579474/pexels-photo-579474.jpeg" alt="Breast Cancer Predictor Cover" />
   <div class="project-info">
     <p class="project-title">Breast Cancer Predictor Web App</p>
     <div class="project-section">
