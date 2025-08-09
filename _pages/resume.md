@@ -88,7 +88,7 @@ Detail-oriented IT professional with 1 year of practical experience and demonstr
       <li>Managed email security: DMARC, SPF, DKIM, BIMI, MTA-STS, TLS-RPT.</li>
       <li>Analyzed email traffic for threats, visualized metrics for reporting.</li>
       <li>Studied Huawei Data Storage Solutions; achieved HCSA Presales Storage Certification.</li>
-      <li>Trained the Communication Authority of Kenya (CAK) on DMARC best practices.</li>
+      
     </ul>
   </div>
   <div class="timeline-entry">
