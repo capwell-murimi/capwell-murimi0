@@ -129,6 +129,31 @@ Browse through my projects below.
 </div>
 
 <div class="project-card">
+  <img class="project-preview" src="https://images.unsplash.com/photo-1585288766827-c62e98d70191?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="LinkedIn Post Generator Cover" />
+  <div class="project-info">
+    <p class="project-title">LinkedIn Post Generator</p>
+    <div class="project-section">
+      <span class="project-label problem-label">Problem:</span>
+      Creating high-quality LinkedIn posts is time-consuming and requires creativity, especially for professionals and marketers who need consistent online presence.
+    </div>
+    <div class="project-section">
+      <span class="project-label approach-label">Approach:</span>
+      Built an AI-powered LinkedIn post generator using Llama3.2 (open-source LLM), Langchain for orchestration, Streamlit for the web UI, and deployed on Groq cloud for fast inference.
+    </div>
+    <div class="project-section">
+      <span class="project-label tools-label">Tools:</span>
+      Llama3.2, Langchain, Streamlit, Groq Cloud
+    </div>
+    <div class="project-section">
+      <span class="project-label result-label">Result:</span>
+      Instantly generates engaging LinkedIn posts based on user prompts, allowing for rapid content creation and idea inspiration.<br>
+      <a href="https://linkedin-post-generator-capwell.streamlit.app/" target="_blank">Live Web App</a>
+    </div>
+    <a class="project-link" href="https://linkedin-post-generator-capwell.streamlit.app/" target="_blank">Try the App</a>
+  </div>
+</div>
+
+<div class="project-card">
   <img class="project-preview" src="https://images.unsplash.com/photo-1506788941197-1cbf01bb8bc5?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="BERT Sentence Similarity preview" />
   <div class="project-info">
     <p class="project-title">NLP: BERT-Based Sentence Similarity Classifier</p>
