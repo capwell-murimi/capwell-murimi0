@@ -112,6 +112,7 @@ Detail-oriented IT professional with 1 year of practical experience and demonstr
   <li><span class="badge">Global AI Bootcamp</span> Nairobi Attendee <i>(2025)</i> [<a href="https://globalai.community/badges/1f45d84a-b58f-414b-9289-413900bd6476/" target="_blank">See Credential</a>]</li>
   <li><span class="badge">Huawei</span> HCSA Presales Storage Certification <i>(Aug 2024)</i></li>
   <li><span class="badge">Huawei</span> HCSA Sales Storage Certification <i>(Oct 2024)</i></li>
+  <li><span class="badge">Cyber Shujaa Data and AI Certification <i>(August 2025)</i></li>
 </ul>
 </div>
 
